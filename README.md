@@ -1,4 +1,4 @@
-# kobajaweb
+# mypetsvue
 
 ## Project setup
 ```
