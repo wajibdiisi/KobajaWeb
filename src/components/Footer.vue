@@ -6,9 +6,9 @@
     <v-card
       flat
       tile
-      class="white--text text-center"
+      class="white--text text-center "
     >
-      <v-card-text>
+      <v-card-text class="text-right">
         <v-btn
           v-for="icon in icons"
           :key="icon"
