@@ -1,198 +1,116 @@
 <template>
-  <div class="aboutus">
-    <!-- Bg_Heroes -->
-    <div class="staticHeroes">
-      <v-img src="../assets/heroes_aboutus.png">
-        <v-row class="pa-12 fill-height">
-          <v-col cols="12" sm="6">
-            <v-container class="heroes_about">
-              <div class="headline">
-                <h2>MyPets</h2>
-              </div>
-              <div class="desc">
-                <h3>
-                  Aplikasi berbasis website dalam membantu para pecinta hewan
-                  peliharaan dengan lebih mengenal hewan peliharaan mereka.
-                </h3>
-              </div>
-            </v-container>
-          </v-col>
-        </v-row>
-      </v-img>
-    </div>
-    <!-- My Team -->
-    <v-row>
-      <v-col v-for="value in 'b'" :key="value">
-        <div :class="`rounded-b-xl`" class="pa-5">
-          <v-container>
-            <div class="konten">
-              <h2>My Teams</h2>
-            </div>
-            <v-row>
-              <v-col
-                v-for="item in items"
-                :key="item.id"
-                class="d-flex child-flex"
-                cols="12"
-                sm="3"
-              >
-                <v-card flat tile color="#ede7e3" class="mx-auto">
-                  <v-img
-                    class="white--text align-end"
-                    :src="item.src"
-                    aspect-ratio="1"
-                  >
-                  </v-img>
-                  <v-card-text class="text-center">
-                    <div class="title">{{ item.name }}</div>
-                    <h3>{{ item.title }}</h3>
-                  </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
-        </div>
-      </v-col>
-    </v-row>
-    <!-- Footer -->
-    <!-- 1x1 -->
-    <v-row class="footer pa-12">
-      <v-col cols="12" sm="4">
-        <v-container>
-          <v-card-actions>
-            <v-btn to="/" color="orange" text>
-              <v-img
-                max-height="122"
-                max-width="263"
-                src="../assets/LogoPPL.svg"
-              ></v-img>
-            </v-btn>
-          </v-card-actions>
-          <div class="desc">
+  <div class="home">
+    <!-- Tulisan -->
+    <v-container>
+      <v-row class="mt-4 justify-center align-center">
+        <v-col lg="6" md="6" sm="12">
+          <h1>Latest Product 1.0</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            finibus faucibus quam, quis vulputate est consequat vel.
+          </p>
+          <v-btn to="/" x-small color="orange"> Learn More </v-btn>
+        </v-col>
+        <v-col lg="6" md="6" sm="12">
+          <v-img src="@/assets/logo kobaja v.2 trans.png"></v-img>
+        </v-col>
+      </v-row>
+    </v-container>
+    
+    <v-container>
+      <v-tabs
+          v-model="tabs"
+          background-color="transparent"
+          grow
+        >
+          <v-tab>
+           Product 1
+          </v-tab>
+          <v-tab>
+           Product 2
+          </v-tab>
+          <v-tab>
+           Product 3
+          </v-tab>
+          <v-tab>
+           All
+          </v-tab>
+        </v-tabs>
+
+      <v-tabs-items v-model="tabs">
+      <v-tab-item>
+        <v-card flat>
+          <v-card-text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </v-card-text>
+        </v-card>
+      </v-tab-item>
+      <v-tab-item>
+        <v-card flat>
+          <v-card-title class="text-h5">
+            An awesome title
+          </v-card-title>
+          <v-card-text>
             <p>
-              Aplikasi berbasis website dalam membantu para pecinta hewan
-              peliharaan dengan lebih mengenal hewan peliharaan mereka.
+              Duis lobortis massa imperdiet quam. Donec vitae orci sed dolor rutrum auctor. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Praesent congue erat at massa.
             </p>
-          </div>
-        </v-container>
-      </v-col>
-      <!-- Footer -->
-      <!-- 1x2 -->
-      <v-col cols="12" sm="4">
-        <v-container>
-          <v-content class="menu">
-            <h3>Menu</h3>
-          </v-content>
-          <v-card-actions>
-            <v-btn to="/about" x-small text color="#515151"> About Us </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151"> Adopsi </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151"> Care&Training </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151"> Age Conversion </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151"> Article </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151"> Breeds </v-btn>
-          </v-card-actions>
-        </v-container>
-      </v-col>
-      <!-- Footer -->
-      <!-- 1x3 -->
-      <v-col cols="12" sm="4">
-        <v-container>
-          <v-content class="menu">
-            <h3>Follow Us!</h3>
-          </v-content>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151">
-              <v-icon small left> mdi-youtube</v-icon>
-              Comingsoon
-            </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151">
-              <v-icon small left> mdi-instagram</v-icon>
-              Comingsoon
-            </v-btn>
-          </v-card-actions>
-          <v-card-actions>
-            <v-btn to="" x-small text color="#515151">
-              <v-icon small left> mdi-facebook</v-icon>
-              Comingsoon
-            </v-btn>
-          </v-card-actions>
-        </v-container>
-      </v-col>
-    </v-row>
+
+            <p>
+              Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Etiam sit amet orci eget eros faucibus tincidunt. Donec sodales sagittis magna.
+            </p>
+
+            <p class="mb-0">
+              Ut leo. Suspendisse potenti. Duis vel nibh at velit scelerisque suscipit. Fusce pharetra convallis urna.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-tab-item>
+      <v-tab-item>
+        <v-card flat>
+          <v-card-title class="text-h5">
+            An even better title
+          </v-card-title>
+          <v-card-text>
+            <p>
+              Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed hendrerit. Maecenas malesuada. Vestibulum ullamcorper mauris at ligula. Proin faucibus arcu quis ante.
+            </p>
+
+            <p class="mb-0">
+              Etiam vitae tortor. Curabitur ullamcorper ultricies nisi. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Aliquam lobortis. Suspendisse potenti.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-tab-item>
+    </v-tabs-items>
+
+    </v-container>
   </div>
 </template>
-
 <script>
 export default {
-  name: "About",
-
-  data() {
-    return {
-      items: [
-        {
-          id: 1,
-          src: require("../assets/habib.png"),
-          name: "M Ilham Habib",
-          title: "#FrondEnd x UI/UX",
-        },
-        {
-          id: 2,
-          src: require("../assets/bowo.png"),
-          name: "M Iqbal Alif",
-          title: "#BackEnd",
-        },
-        {
-          id: 3,
-          src: require("../assets/doli.png"),
-          name: "Ahmad Irfan F",
-          title: "#FullStack",
-        },
-        {
-          id: 4,
-          src: require("../assets/bagus.png"),
-          name: "Gede Bagus D",
-          title: "#PM x Designer",
-        },
-      ],
-    };
-  },
+  name: "Home",
+   data () {
+      return {
+       
+      }
+    },
 };
 </script>
-<style lang="scss">
-.headline {
-  color: #ffa62b;
-  size: 45px;
+<style>
+.home {
+  background-color: black;
 }
-.heroes_about {
-  padding-top: 10%;
-}
-.desc {
-  margin-top: 5%;
-  color: #515151;
-}
-.rounded-b-xl {
-  background: #ede7e3;
-}
-.konten {
+.trivia {
+  font-size: 2.5rem;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: #ffa62b;
 }
-.aboutus {
-  background: #82c0cc;
-  color: #515151;
+.trivia-01 {
+  color: #f5bd3c;
+}
+.trivia-02 {
+  color: #c23331;
+}
+.trivia-03 {
+  color: #414cf0;
 }
 </style>

@@ -2,30 +2,26 @@
   <v-toolbar flat color="black">
     <v-toolbar-title>
       <v-card-actions>
-        <a href="/"  class="border">
-          <v-img
-            src="@/assets/logo kobaja v.2 trans.png"
-            class="logo"
-          ></v-img>
-        </a>
+        <router-link to="/">
+          <v-img src="@/assets/logo kobaja v.2 trans.png" class="logo"></v-img>
+        </router-link>
       </v-card-actions>
     </v-toolbar-title>
     <v-toolbar-items class="hidden-xs-only">
       <v-card-actions>
-        <v-btn to="/about" x-small color="white" text> Home </v-btn>
+        <v-btn to="/" x-small color="white" text> Home </v-btn>
       </v-card-actions>
       <v-card-actions>
         <v-btn to="/adoption" x-small color="white" text> About Us </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/care" x-small color="white" text> Product </v-btn>
+        <v-btn to="/about" x-small color="white" text> Product </v-btn>
       </v-card-actions>
       <v-card-actions>
         <v-btn to="/ageconversion" x-small color="white" text>
-         Contact Us
+          Contact Us
         </v-btn>
       </v-card-actions>
-    
     </v-toolbar-items>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-xs-only">
@@ -113,7 +109,6 @@ export default {
 </script>
 
 <style>
-
 /* .logo::before{
   content: "";
   display: block;
@@ -127,7 +122,7 @@ export default {
   height: 3em;
   background: rgba(240, 240, 240, 0.6);
 } */
-.logo{
+.logo {
   width: 60px;
   height: 60px;
 }

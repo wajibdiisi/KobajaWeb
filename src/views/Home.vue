@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Tulisan -->
     <v-container>
-      <v-row class="mt-16">
+      <v-row class="mt-10">
         <v-col>
          <p class="trivia">Lorem ipsum <span class="trivia-01"> dolor </span> sit amet consectetur adipisicing elit. Unde eos fugiat, optio aperiam pariatur et  <span class="trivia-02"> minus </span> reprehenderit provident <span class="trivia-03"> quam </span>. Reprehenderit?</p>
         </v-col>
