@@ -9,7 +9,9 @@
         <v-col cols="6" sm="8">
           <v-row class="pa-12">
             <v-container>
-              <h3 class="header_heroes">Be My New Family!</h3>
+              <h3 class="header_heroes">Be My New Family!<i class="fa fa-flag-o" aria-hidden="true"></i>
+
+</h3>
               <p class="desc_heroes">
                 Memberikan hewanmu, untuk kasih sayang yang diperlukan
               </p>
