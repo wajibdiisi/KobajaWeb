@@ -23,7 +23,8 @@
            background-color="transparent "
             dark
         >
-          <v-tab color>
+          <v-tab background-color="transparent "
+            dark>
             Product 1
           </v-tab>
            <v-tab>
@@ -38,16 +39,41 @@
         </v-tabs>
 
       <v-tabs-items v-model="tabs">
-      <v-tab-item>
-        <v-card flat>
-          <v-card-text>
-           <v-img src="@/assets/logo kobaja v.2 trans.png"></v-img>
-          </v-card-text>
-        </v-card>
+      <v-tab-item class="mt-5">
+         <v-card flat color="basil">
+             <v-container class="container-tab">
+             <v-row>
+               <v-col cols="4">
+                 <v-img src="@/assets/index.jpg"></v-img>
+               </v-col>
+               <v-col cols="4">
+                 <v-img src="@/assets/index.jpg"></v-img>
+               </v-col>
+               <v-col cols="4">
+                 <v-img src="@/assets/index.jpg"></v-img>
+               </v-col>
+             </v-row>
+           </v-container>
+
+            <v-container class="container-tab">
+             <v-row>
+               <v-col cols="4">
+                 <v-img src="@/assets/index.jpg"></v-img>
+               </v-col>
+               <v-col cols="4">
+                 <v-img src="@/assets/index.jpg"></v-img>
+               </v-col>
+               <v-col cols="4">
+                 <v-img src="@/assets/index.jpg"></v-img>
+               </v-col>
+             </v-row>
+           </v-container>
+         </v-card>
+          
       </v-tab-item>
       <v-tab-item>
-        <v-card flat>
-          <v-img src="@/assets/logo kobaja v.2 trans.png"></v-img>
+        <v-card flat color="basil">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam esse quasi nulla sed? Maxime consequuntur corrupti explicabo eaque ipsam.</p>
         </v-card>
       </v-tab-item>
       <v-tab-item>
@@ -92,4 +118,17 @@ export default {
 .trivia-03 {
   color: #414cf0;
 }
+/* .container-tab{
+  padding: 0 0 25px 25px;
+} */
+.basil {
+  background-color: black !important;
+}
+.basil--text {
+  color: black !important;
+}
+.v-tabs-items{
+  background-color: transparent !important;
+}
+
 </style>
