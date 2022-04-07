@@ -8,7 +8,7 @@
           </v-icon>
         </v-btn>
       </v-card-text>
-
+<hr class="line">
       <v-card-text class="white--text pt-0">
         Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
         Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
@@ -20,7 +20,7 @@
         montes, nascetur ridiculus mus.
       </v-card-text>
 
-      <v-divider></v-divider>
+<hr>
 
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
