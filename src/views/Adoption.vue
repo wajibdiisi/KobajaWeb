@@ -88,13 +88,55 @@
             </v-container> -->
           </v-card>
         </v-tab-item>
-        <v-tab-item>
+        <v-tab-item class="mt-5">
           <v-card flat color="basil">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              totam esse quasi nulla sed? Maxime consequuntur corrupti explicabo
-              eaque ipsam.
-            </p>
+            <v-container class="container-tab">
+              <v-row>
+                <v-col cols="12">
+                  <h1 class="text-center text-uppercase">
+                    Vision and Mission of the Company
+                  </h1>
+                  <v-row class="mt-4 justify-center align-center">
+                    <v-col lg="6" md="6" sm="12">
+                      <h2>Vision</h2>
+                      <h3 class="font-weight-regular mt-2">
+                        Leading the company into the best company in providing
+                        steel trading and raw material for the steel industry.
+                      </h3>
+                    </v-col>
+                    <v-col lg="6" md="6" sm="12">
+                      <v-img src="@/assets/index.jpg"></v-img>
+                    </v-col>
+                  </v-row>
+
+                  <v-row class="mt-4 justify-center align-center">
+                    <v-col lg="6" md="6" sm="12">
+                      <h2>Mission</h2>
+                      <h3 class="font-weight-regular mt-2">
+                        Providing high quality and the best price of steel
+                        trading and raw material for the steel industry and
+                        other related industries.
+                      </h3>
+                    </v-col>
+                    <v-col lg="6" md="6" sm="12">
+                      <v-img src="@/assets/index.jpg"></v-img>
+                    </v-col>
+                  </v-row>
+
+                  <v-row class="mt-4 justify-center align-center">
+                    <v-col lg="6" md="6" sm="12">
+                      <h2>Value</h2>
+                      <h3 class="font-weight-regular mt-2">
+                        Providing the best value and solution to the customer.
+                      </h3>
+                    </v-col>
+                    <v-col lg="6" md="6" sm="12">
+                      <v-img src="@/assets/index.jpg"></v-img>
+                    </v-col>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </v-container>
           </v-card>
         </v-tab-item>
         <v-tab-item>
