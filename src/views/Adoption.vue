@@ -65,12 +65,15 @@
                       ● Trading Steel and Raw Mineral of Steel industry and
                       other industries.
                     </h3>
+                    <v-col cols="12">
+                      <v-img src="@/assets/index.jpg"></v-img>
+                    </v-col>
                   </div>
                 </v-col>
               </v-row>
             </v-container>
 
-            <v-container class="container-tab">
+            <!-- <v-container class="container-tab">
               <v-row>
                 <v-col cols="4">
                   <v-img src="@/assets/index.jpg"></v-img>
@@ -82,7 +85,7 @@
                   <v-img src="@/assets/index.jpg"></v-img>
                 </v-col>
               </v-row>
-            </v-container>
+            </v-container> -->
           </v-card>
         </v-tab-item>
         <v-tab-item>
