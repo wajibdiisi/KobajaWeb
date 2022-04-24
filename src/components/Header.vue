@@ -18,7 +18,7 @@
         <v-btn to="/about" x-small color="white" text> Product </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/ageconversion" x-small color="white" text>
+        <v-btn to="/contactus" x-small color="white" text>
           Contact Us
         </v-btn>
       </v-card-actions>

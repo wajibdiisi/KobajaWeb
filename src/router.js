@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Care from './views/Care.vue'
-import Ageconversion from './views/Ageconversion.vue'
+import ContactUs from './views/ContactUs.vue'
 import Article from './views/Article.vue'
 import Adoption from './views/Adoption.vue'
 import Breeds from './views/Breeds.vue'
@@ -35,9 +35,9 @@ let router = new Router({
       component: Adoption
     },
     {
-      path: '/ageconversion',
-      name: 'ageconversion',
-      component: Ageconversion
+      path: '/contactus',
+      name: 'contactus',
+      component: ContactUs
     },
     {
       path: '/article',

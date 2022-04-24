@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <!-- Tulisan -->
     <v-container>
       <v-row class="mt-10">

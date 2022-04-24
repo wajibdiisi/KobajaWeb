@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <!-- Tulisan -->
     <v-container>
       <v-row class="mt-4 justify-center align-center">
@@ -19,7 +19,7 @@
 
     <v-container>
       <hr />
-      <v-card flat color="basil">
+      <v-card flat outlined color="transparent">
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
@@ -82,7 +82,7 @@
       </v-card>
 
       <hr />
-      <v-card flat color="basil">
+      <v-card flat outlined color="transparent">
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
@@ -143,7 +143,7 @@
       </v-card>
 
       <hr />
-      <v-card flat color="basil">
+      <v-card flat outlined color="transparent">
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
@@ -165,7 +165,7 @@
       </v-card>
 
       <hr />
-      <v-card flat color="basil">
+      <v-card flat outlined color="transparent">
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">

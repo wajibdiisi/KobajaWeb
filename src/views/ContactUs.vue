@@ -1,0 +1,189 @@
+<template>
+ 
+  
+
+<v-container fluid class="lighten-5">
+   <v-img max-height="400" src="https://picsum.photos/450/450">
+      <v-overlay absolute>
+        <div class="d-flex fill-height" style="flex-direction:column">
+          <div class="d-flex fill-height align-center justify-center">
+            <v-card flat color="transparent">
+              <v-card-text  :class="headingClass"><h1 class="text-center">Contact Us</h1></v-card-text>
+              <v-card-subtitle  :class="subtitleClass"><h2>want to make a deal with the product that we can provide?</h2></v-card-subtitle>
+            </v-card>
+          </div>
+        
+        </div>
+      </v-overlay>
+    </v-img>
+  <v-row>
+    <v-col cols="12" md="6" sm="6" offset-md="3" offset-sm="3">
+   
+   <h1 class="text-center mt-15">Kontak</h1>
+ 
+  <v-card
+    
+    flat
+    class="mx-auto"
+    max-width="1500"
+  >
+ <hr class="line">  
+  <v-row justify="center"
+      no-gutters
+      align="center"
+      >
+<v-col cols="12" md="4" sm="4" class="px-auto">
+   <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-email
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>Jl.Ir. H. Juanda 3 No. 17-19, RT.008/RW.002, Kel.Kebon Kelapa Kec. Gambir, Jakarta Pusat 10120</v-list-item-title>
+          <v-list-item-subtitle>Jl.Ir. H. Juanda 3 No. 17-19, RT.008/RW.002, Kel.Kebon Kelapa Kec. Gambir, Jakarta Pusat 10120</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+      <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-email
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>aliconnors@example.com</v-list-item-title>
+          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+      <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-email
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>aliconnors@example.com</v-list-item-title>
+          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+       <v-list-item>
+        <v-list-item-icon>
+          <v-icon color="indigo">
+            mdi-email
+          </v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>aliconnors@example.com</v-list-item-title>
+          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+  </v-col>
+  <v-divider vertical></v-divider>
+  <v-col cols="12" md="7" sm="7">
+      <v-card-text>
+    <v-form
+    ref="form"
+    v-model="valid"
+    lazy-validation
+  >
+    <v-text-field
+      v-model="name"
+      :rules="nameRules"
+      label="Name"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="Email"
+      :rules="nameRules"
+      label="Email"
+      required
+    ></v-text-field>
+    
+    <v-text-field
+      v-model="name"
+      :rules="nameRules"
+      label="No Telp"
+      required
+    ></v-text-field>
+
+
+ <v-textarea
+          label="Pesan"
+          auto-grow
+          rows="3"
+          row-height="25"
+          shaped
+        ></v-textarea>
+
+   <vue-recaptcha sitekey="6Ldli5kfAAAAAFNV5IsUyYXtJMZbrvV79Kgb7Jja"></vue-recaptcha>
+
+  
+
+   
+
+
+    <v-btn
+      color="error"
+      class="mr-4"
+      @click="reset"
+    >
+     Kirim Pesan
+    </v-btn>
+
+ 
+  </v-form>
+    </v-card-text>
+  </v-col>
+  </v-row>
+  </v-card>
+  </v-col>
+  </v-row>
+</v-container>
+</template>
+<script>
+ import { VueRecaptcha } from 'vue-recaptcha';
+export default {
+  name: "ContactUs",
+  components: {
+    VueRecaptcha
+  },
+  data() {
+    return {
+      tabs: null,
+    };
+  },
+};
+</script>
+<style>
+
+.trivia {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.trivia-01 {
+  color: #f5bd3c;
+}
+.trivia-02 {
+  color: #c23331;
+}
+.trivia-03 {
+  color: #414cf0;
+}
+/* .container-tab{
+  padding: 0 0 25px 25px;
+} */
+.basil {
+  background-color: black !important;
+}
+.basil--text {
+  color: black !important;
+}
+.v-tabs-items {
+  background-color: transparent !important;
+}
+</style>
