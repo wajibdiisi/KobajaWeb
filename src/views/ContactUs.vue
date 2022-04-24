@@ -8,8 +8,8 @@
         <div class="d-flex fill-height" style="flex-direction:column">
           <div class="d-flex fill-height align-center justify-center">
             <v-card flat color="transparent">
-              <v-card-text  :class="headingClass"><h1 class="text-center">Contact Us</h1></v-card-text>
-              <v-card-subtitle  :class="subtitleClass"><h2>want to make a deal with the product that we can provide?</h2></v-card-subtitle>
+              <v-card-text  ><h1 class="text-center">Contact Us</h1></v-card-text>
+              <v-card-subtitle ><h2><p>{{ $t("message.hello") }}</p></h2></v-card-subtitle>
             </v-card>
           </div>
         
@@ -87,26 +87,19 @@
       <v-card-text>
     <v-form
     ref="form"
-    v-model="valid"
     lazy-validation
   >
     <v-text-field
-      v-model="name"
-      :rules="nameRules"
       label="Name"
       required
     ></v-text-field>
 
     <v-text-field
-      v-model="Email"
-      :rules="nameRules"
       label="Email"
       required
     ></v-text-field>
     
     <v-text-field
-      v-model="name"
-      :rules="nameRules"
       label="No Telp"
       required
     ></v-text-field>
@@ -130,7 +123,6 @@
     <v-btn
       color="error"
       class="mr-4"
-      @click="reset"
     >
      Kirim Pesan
     </v-btn>

@@ -4,6 +4,9 @@
     <v-container>
       <v-row class="mt-10">
         <v-col>
+           <p class="trivia">
+            {{ $t("message.test") }}
+          </p>
           <p class="trivia">
             Lorem ipsum <span class="trivia-01"> dolor </span> sit amet
             consectetur adipisicing elit. Unde eos fugiat, optio aperiam
