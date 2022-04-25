@@ -4,14 +4,13 @@
     <v-container>
       <v-row class="mt-10">
         <v-col>
-           <p class="trivia">
+          <p class="trivia">
             {{ $t("message.test") }}
           </p>
           <p class="trivia">
-            Lorem ipsum <span class="trivia-01"> dolor </span> sit amet
-            consectetur adipisicing elit. Unde eos fugiat, optio aperiam
-            pariatur et <span class="trivia-02"> minus </span> reprehenderit
-            provident <span class="trivia-03"> quam </span>. Reprehenderit?
+            Pt. <span class="trivia-01"> Kobaja </span>
+            <span class="trivia-02"> Prima </span>
+            <span class="trivia-03"> Nusantara </span>
           </p>
         </v-col>
       </v-row>
@@ -20,70 +19,57 @@
     <!-- Card -->
     <v-container>
       <v-hover v-slot="{ hover }">
-      <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-        <v-img src="@/assets/gunung.jpg" height="225px">
-          <v-card-title class="text-h6 white--text">
-            <v-row>
-              <v-col cols="6" >
-              <p class="mt-8 subheading text-left">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, est!
-              </p>
-               <v-btn to="/" x-small text color="white">
-                  Learn More
-                </v-btn>
-              </v-col>
-             
-            </v-row>
-          </v-card-title>
-        </v-img>
-      </v-card>
-    </v-hover>
-    </v-container>
-   
-    <!-- Card -->
-   <v-container>
-      <v-hover v-slot="{ hover }">
-      <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-        <v-img src="@/assets/gunung.jpg" height="225px">
-          <v-card-title class="text-h6 white--text">
-            <v-row>
-              <v-col cols="6" >
-              <p class="mt-8 subheading text-left">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, est!
-              </p>
-               <v-btn to="/" x-small text color="white">
-                  Learn More
-                </v-btn>
-              </v-col>
-             
-            </v-row>
-          </v-card-title>
-        </v-img>
-      </v-card>
-    </v-hover>
+        <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
+          <v-img src="@/assets/gunung.jpg" height="225px">
+            <v-card-title class="text-h6 white--text">
+              <v-row>
+                <v-col cols="6">
+                  <p class="mt-8 subheading text-left">
+                    More about our product!
+                  </p>
+                  <v-btn to="/" x-small text color="white"> Learn More </v-btn>
+                </v-col>
+              </v-row>
+            </v-card-title>
+          </v-img>
+        </v-card>
+      </v-hover>
     </v-container>
 
     <!-- Card -->
-   <v-container>
+    <v-container>
       <v-hover v-slot="{ hover }">
-      <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-        <v-img src="@/assets/gunung.jpg" height="225px">
-          <v-card-title class="text-h6 white--text">
-            <v-row>
-              <v-col cols="6" >
-              <p class="mt-8 subheading text-left">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, est!
-              </p>
-               <v-btn to="/" x-small text color="white">
-                  Learn More
-                </v-btn>
-              </v-col>
-             
-            </v-row>
-          </v-card-title>
-        </v-img>
-      </v-card>
-    </v-hover>
+        <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
+          <v-img src="@/assets/gunung.jpg" height="225px">
+            <v-card-title class="text-h6 white--text">
+              <v-row>
+                <v-col cols="6">
+                  <p class="mt-8 subheading text-left">Make a deal with us!</p>
+                  <v-btn to="/" x-small text color="white"> Learn More </v-btn>
+                </v-col>
+              </v-row>
+            </v-card-title>
+          </v-img>
+        </v-card>
+      </v-hover>
+    </v-container>
+
+    <!-- Card -->
+    <v-container>
+      <v-hover v-slot="{ hover }">
+        <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
+          <v-img src="@/assets/gunung.jpg" height="225px">
+            <v-card-title class="text-h6 white--text">
+              <v-row>
+                <v-col cols="6">
+                  <p class="mt-8 subheading text-left">Learn more about us!</p>
+                  <v-btn to="/" x-small text color="white"> Learn More </v-btn>
+                </v-col>
+              </v-row>
+            </v-card-title>
+          </v-img>
+        </v-card>
+      </v-hover>
     </v-container>
 
     <!-- Tulisan -->
@@ -91,7 +77,7 @@
       <v-row class="mt-2 mb-10">
         <v-col>
           <p class="trivia">
-            Providing the best <span class="trivia-01"> value </span> and
+            We provide the best <span class="trivia-01"> value </span> and
             <span class="trivia-02"> solution </span>
           </p>
         </v-col>
@@ -100,8 +86,7 @@
   </div>
 </template>
 <script>
-export default {
-};
+export default {};
 </script>
 <style>
 .home {

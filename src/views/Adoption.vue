@@ -91,7 +91,7 @@
               </h1>
               <v-row class="mt-4 justify-center align-center">
                 <v-col lg="6" md="6" sm="12">
-                  <v-img src="@/assets/index.jpg"></v-img>
+                  <v-img src="@/assets/logo kobaja v.2 trans.png"></v-img>
                 </v-col>
                 <v-col lg="6" md="6" sm="12">
                   <h2>Vision</h2>
