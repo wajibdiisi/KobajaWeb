@@ -23,7 +23,7 @@
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
-              <div class="mt-2">
+              <div class="my-6">
                 <h2 class="font-weight-regular">
                   Main strategy of PT Kobaja Nusantara Prima is leading the
                   company into the best and trustable company in providing steel
@@ -86,7 +86,7 @@
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
-              <h1 class="text-center text-uppercase">
+              <h1 class="text-center text-uppercase mt-4">
                 Vision and Mission of the Company
               </h1>
               <v-row class="mt-4 justify-center align-center">
@@ -148,7 +148,7 @@
           <v-row>
             <v-col cols="12">
               <div class="text-center mt-2">
-                <h1 class="text-center text-uppercase mt-15">
+                <h1 class="text-center text-uppercase mt-6">
                   Our scope of business
                 </h1>
                 <h3 class="font-weight-regular text-center mt-2">
@@ -170,7 +170,7 @@
           <v-row>
             <v-col cols="12">
               <div class="text-center mt-2">
-                <h1 class="text-center text-uppercase mt-15">
+                <h1 class="text-center text-uppercase mt-6">
                   Organizational Structures
                 </h1>
                 <v-col cols="12">
