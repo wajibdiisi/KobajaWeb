@@ -15,6 +15,7 @@
             sm="8"
             md="8"
             lg="8"
+            cols="12"
             class="d-flex justify-start align-center py-7"
           >
             <v-card-text>
@@ -37,8 +38,14 @@
               </p> -->
             </v-card-text>
           </v-col>
-          <v-col sm="4" md="4" lg="4" class="py-7">
-            <v-img src="@/assets/bagus.png"></v-img>
+          <v-col
+            sm="4"
+            md="4"
+            lg="4"
+            cols="12"
+            class="d-flex py-7 mx-auto justify-center"
+          >
+            <v-img src="@/assets/ironOres.jpg" max-width="300"></v-img>
           </v-col>
         </v-row>
         <v-divider></v-divider>

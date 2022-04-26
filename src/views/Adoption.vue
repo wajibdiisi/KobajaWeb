@@ -159,8 +159,8 @@
                 <v-col cols="12">
                   <v-img
                     src="@/assets/scope.png"
-                    width="900"
-                    class="d-flex mx-auto"
+                    width="1000"
+                    class="d-flex mx-auto my-4"
                   ></v-img>
                 </v-col>
               </div>
