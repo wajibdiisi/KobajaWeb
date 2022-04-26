@@ -195,7 +195,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .home {
   background-color: black;
 }
@@ -223,5 +223,10 @@ export default {
 }
 .v-tabs-items {
   background-color: transparent !important;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1350px;
+    }
 }
 </style>

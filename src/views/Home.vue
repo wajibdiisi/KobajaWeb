@@ -88,7 +88,7 @@
 <script>
 export default {};
 </script>
-<style>
+<style scoped>
 .home {
   background-color: black;
 }
@@ -114,5 +114,10 @@ export default {};
 }
 .show-btns {
   color: rgba(255, 255, 255, 1) !important;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1350px;
+    }
 }
 </style>

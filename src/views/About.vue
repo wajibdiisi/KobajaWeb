@@ -213,7 +213,7 @@ export default {
 }
 @media (min-width: 1200px) {
     .container{
-        max-width: 970px;
+        max-width: 1350px;
     }
 }
 </style>

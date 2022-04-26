@@ -127,4 +127,10 @@ export default {
   width: 60px;
   height: 60px;
 }
+.v-sheet.theme--dark.v-toolbar.v-toolbar--flat.v-app-bar.v-app-bar--fixed.v-app-bar--is-scrolled.black {
+background-color: #121212 !important;
+}
+.v-sheet.theme--dark.v-toolbar.v-toolbar--flat.black {
+background-color: #121212 !important;
+}
 </style>
