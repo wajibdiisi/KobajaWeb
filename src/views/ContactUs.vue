@@ -3,7 +3,7 @@
   
 
 <v-container fluid class="lighten-5">
-   <v-img max-height="400" src="https://picsum.photos/450/450">
+   <v-img max-height="400" src="@/assets/contactus.jpg">
       <v-overlay absolute>
         <div class="d-flex fill-height" style="flex-direction:column">
           <div class="d-flex fill-height align-center justify-center">
