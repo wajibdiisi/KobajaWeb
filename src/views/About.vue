@@ -30,7 +30,11 @@
             <v-container class="container-tab">
               <v-row class="tab">
                 <v-col sm="4" md="4" lg="3">
+                  <imgFull
+                    v-if="showImage"
+                    @close="toggleImage">
                   <v-img src="@/assets/alloyOre.jpg" class="img-fluid"></v-img>
+                  </imgFull>
                 </v-col>
                 <v-col sm="4" md="4" lg="3">
                   <v-img src="@/assets/alumina.jpg" class="img-fluid"></v-img>
@@ -164,13 +168,26 @@
     </v-container>
 </template>
 <script>
+import imgFull from "@/components/imgFull.vue";
 export default {
+  components:{
+    imgFull
+  },
   name: "Home",
   data() {
     return {
       tabs: null,
+      showImage: [],
     };
   },
+  methods:{
+      toggleImage(id) {
+      this.showImage[id] = false;
+    },
+    imageDetail(id) {
+      this.showImage[id] = true;
+    },
+  }
 };
 </script>
 <style scoped>
