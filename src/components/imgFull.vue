@@ -1,14 +1,54 @@
 <template>
-   <div class="backdrop-confirm" @click.self="closeConfirm">
-    <div class="modal-container">
-      <div class="text-center">
-       <slot></slot>
-        <button class="btn btn-confirm-back" @click="closeConfirm">
-          Close
-        </button>
-       </div>
-    </div>
+  <!-- <div class="backdrop-confirm" @click.self="closeConfirm"> -->
+  <!-- <div class="modal-container"> -->
+  <div class="text-center">
+    <v-dialog v-model="dialog" width="1000">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
+          Click Me
+        </v-btn>
+      </template>
+
+      <v-card flat color="#404040">
+        <v-row justify="center" no-gutters class="mx-3">
+          <v-col
+            sm="8"
+            md="8"
+            lg="8"
+            class="d-flex justify-start align-center py-7"
+          >
+            <v-card-text>
+              <v-card-title class="font-weight-bold">Iron ore</v-card-title>
+              <v-card-subtitle
+                >Iron ores are rocks and minerals from which metallic iron can
+                be economically extracted. The ores are usually rich in iron
+                oxides and vary in color from dark grey, bright yellow, or deep
+                purple to rusty red. The iron is usually found in the form of
+                magnetite, hematite, goethite, limonite or
+                siderite.</v-card-subtitle
+              >
+              <!-- <h1 class="mb-4">Latest Product</h1>
+              <p>
+                Iron ores are rocks and minerals from which metallic iron can be
+                economically extracted. The ores are usually rich in iron oxides
+                and vary in color from dark grey, bright yellow, or deep purple
+                to rusty red. The iron is usually found in the form of
+                magnetite, hematite, goethite, limonite or siderite.
+              </p> -->
+            </v-card-text>
+          </v-col>
+          <v-col sm="4" md="4" lg="4" class="py-7">
+            <v-img src="@/assets/bagus.png"></v-img>
+          </v-col>
+        </v-row>
+        <v-divider></v-divider>
+      </v-card>
+    </v-dialog>
+    <!-- <slot></slot>
+    <button class="btn btn-confirm-back" @click="closeConfirm">Close</button> -->
   </div>
+  <!-- </div> -->
+  <!-- </div> -->
 </template>
 
 <script>
@@ -59,7 +99,7 @@ export default {
 .btn-confirm-back {
   border: 2px #ed7d2b solid;
   margin: 10px;
-  color: #ed7d2b ;
+  color: #ed7d2b;
 }
 .btn-confirm-back:hover {
   background-color: #ed7d2b;
