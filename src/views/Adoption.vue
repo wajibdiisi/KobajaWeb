@@ -95,12 +95,12 @@
                 </v-col>
                 <v-col lg="6" md="6" sm="12">
                   <h2>Vision</h2>
-                  <h3 class="font-weight-regular mt-2">
+                  <h3 class="font-weight-regular mt-2 mb-13">
                     Leading the company into the best company in providing steel
                     trading and raw material for the steel industry.
                   </h3>
                   <h2>Mission</h2>
-                  <h3 class="font-weight-regular mt-2">
+                  <h3 class="font-weight-regular mt-2 mb-13">
                     Providing high quality and the best price of steel trading
                     and raw material for the steel industry and other related
                     industries.
