@@ -211,4 +211,9 @@ export default {
 .row.tab {
   background-color: #121212;
 }
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
 </style>
