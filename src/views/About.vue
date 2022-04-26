@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="mb-10">
       <v-row class="mt-4 justify-center align-center">
         <v-col lg="6" md="6" sm="12">
           <h1>Latest Product</h1>
