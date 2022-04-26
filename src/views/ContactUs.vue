@@ -1,8 +1,5 @@
 <template>
- 
-  
-
-<v-container fluid class="lighten-5">
+<v-container fluid class="lighten-5 mb-10">
    <v-img max-height="400" src="@/assets/contactus.jpg">
       <v-overlay absolute>
         <div class="d-flex fill-height" style="flex-direction:column">

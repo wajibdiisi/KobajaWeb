@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-10">
     <!-- Tulisan -->
     <v-container>
       <v-row class="mt-4 justify-center align-center">
