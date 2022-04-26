@@ -1,5 +1,6 @@
 <template>
-  <v-toolbar flat color="black">
+<v-container>
+    <v-toolbar flat color="black">
     <v-toolbar-title>
       <v-card-actions>
         <router-link to="/">
@@ -96,6 +97,8 @@
       </v-menu>
     </div>
   </v-toolbar>
+</v-container>
+
 </template>
 
 <script>
