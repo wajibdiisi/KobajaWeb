@@ -3,7 +3,7 @@
     <!-- Tulisan -->
     <v-container>
       <v-row class="mt-4 justify-center align-center">
-        <v-col lg="6" md="6" sm="12">
+        <v-col lg="8" md="8" sm="12">
           <h1>Tentang Pt. Kobaja Prima Nusantara Prima</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -11,8 +11,8 @@
           </p>
           <!-- <v-btn to="/" x-small color="orange"> Learn More </v-btn> -->
         </v-col>
-        <v-col lg="6" md="6" sm="12">
-          <v-img src="@/assets/logo kobaja v.2 trans.png"></v-img>
+        <v-col lg="4" md="4" sm="12">
+          <v-img src="@/assets/logo kobaja v.2 trans.png" width="500"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -23,8 +23,9 @@
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
-              <div class="my-6">
-                <h2 class="font-weight-regular">
+              <div class="my-6 text-justify">
+                <!-- Sebelumnya font-weight-regular -->
+                <h2 class="font-weight-light">
                   Main strategy of PT Kobaja Nusantara Prima is leading the
                   company into the best and trustable company in providing steel
                   trading and raw material. We are giving the best value and
@@ -86,10 +87,10 @@
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
-              <h1 class="text-center text-uppercase mt-4">
+              <h1 class="text-center text-uppercase my-4">
                 Vision and Mission of the Company
               </h1>
-              <v-row class="mt-4 justify-center align-center">
+              <v-row class="mb-4 justify-center align-center">
                 <v-col lg="6" md="6" sm="12">
                   <v-img src="@/assets/visimisi.jpg"></v-img>
                 </v-col>
@@ -156,7 +157,11 @@
                   industries.
                 </h3>
                 <v-col cols="12">
-                  <v-img src="@/assets/scope.png"></v-img>
+                  <v-img
+                    src="@/assets/scope.png"
+                    width="900"
+                    class="d-flex mx-auto"
+                  ></v-img>
                 </v-col>
               </div>
             </v-col>
@@ -225,8 +230,8 @@ export default {
   background-color: transparent !important;
 }
 @media (min-width: 1200px) {
-    .container{
-        max-width: 1350px;
-    }
+  .container {
+    max-width: 1350px;
+  }
 }
 </style>
