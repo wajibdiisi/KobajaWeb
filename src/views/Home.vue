@@ -20,7 +20,11 @@
     <v-container>
       <v-hover v-slot="{ hover }">
         <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-          <v-img src="@/assets/gunung.jpg" height="225px">
+          <v-img
+            lazy-src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+            src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+            height="450px"
+          >
             <v-card-title class="text-h6 white--text">
               <v-row>
                 <v-col cols="6">
@@ -40,7 +44,11 @@
     <v-container>
       <v-hover v-slot="{ hover }">
         <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-          <v-img src="@/assets/gunung.jpg" height="225px">
+          <v-img
+            lazy-src="https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            height="450px"
+          >
             <v-card-title class="text-h6 white--text">
               <v-row>
                 <v-col cols="6">
@@ -58,7 +66,11 @@
     <v-container>
       <v-hover v-slot="{ hover }">
         <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-          <v-img src="@/assets/gunung.jpg" height="225px">
+          <v-img
+            lazy-src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+            src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+            height="450px"
+          >
             <v-card-title class="text-h6 white--text">
               <v-row>
                 <v-col cols="6">
@@ -116,8 +128,8 @@ export default {};
   color: rgba(255, 255, 255, 1) !important;
 }
 @media (min-width: 1200px) {
-    .container{
-        max-width: 1350px;
-    }
+  .container {
+    max-width: 1350px;
+  }
 }
 </style>
