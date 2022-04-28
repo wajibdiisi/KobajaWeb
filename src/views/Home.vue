@@ -5,7 +5,12 @@
       <v-row class="mt-10">
         <v-col>
           <p class="trivia">
-            {{ $t("message.test") }}
+            Kobaja Nusantara Prima offers the
+            <span class="trivia-01"> best quality </span> of metal in the
+            industry including but not limited to
+            <span class="trivia-04">
+              iron, steel, ferro alloy, and foundry industry.
+            </span>
           </p>
           <p class="trivia">
             Pt. <span class="trivia-01"> Kobaja </span>
@@ -164,6 +169,9 @@ export default {};
 }
 .trivia-03 {
   color: #414cf0;
+}
+.trivia-04 {
+  color: #3ac569;
 }
 
 .v-card {
