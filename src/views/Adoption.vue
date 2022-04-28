@@ -175,12 +175,77 @@
           <v-row>
             <v-col cols="12">
               <div class="text-center mt-2">
-                <h1 class="text-center text-uppercase mt-6">
+                <h1 class="text-center text-uppercase my-6">
                   Organizational Structures
                 </h1>
-                <v-col cols="12">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
+                <v-row>
+                  <v-col cols="12" class="d-flex justify-center mt-5">
+                    <v-card height="auto" width="auto">
+                      <v-img
+                        src="@/assets/bagus.png"
+                        max-width="200"
+                        class="mx-8 mt-4"
+                      >
+                      </v-img>
+                      <v-card-text class="pt-2">
+                        <div class="text-h6 font-weight-regular">
+                          Bapa bagud
+                        </div>
+                        <div class="font-weight-medium grey--text">Owner</div>
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+
+                  <v-col cols="12" class="d-flex justify-center">
+                    <v-card height="auto" width="auto">
+                      <v-img
+                        src="@/assets/bagus.png"
+                        max-width="200"
+                        class="mx-8 mt-4"
+                      >
+                      </v-img>
+                      <v-card-text class="pt-2">
+                        <div class="text-h6 font-weight-regular">
+                          Bapa bagud
+                        </div>
+                        <div class="font-weight-medium grey--text">Owner</div>
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+
+                  <v-col cols="6" class="d-flex justify-end">
+                    <v-card height="auto" width="auto">
+                      <v-img
+                        src="@/assets/bagus.png"
+                        max-width="200"
+                        class="mx-8 mt-4"
+                      >
+                      </v-img>
+                      <v-card-text class="pt-2">
+                        <div class="text-h6 font-weight-regular">
+                          Bapa bagud
+                        </div>
+                        <div class="font-weight-medium grey--text">Owner</div>
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+                  <v-col cols="6" class="d-flex justify-start">
+                    <v-card height="auto" width="auto">
+                      <v-img
+                        src="@/assets/bagus.png"
+                        max-width="200"
+                        class="mx-8 mt-4"
+                      >
+                      </v-img>
+                      <v-card-text class="pt-2">
+                        <div class="text-h6 font-weight-regular">
+                          Bapa bagud
+                        </div>
+                        <div class="font-weight-medium grey--text">Owner</div>
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+                </v-row>
               </div>
             </v-col>
           </v-row>
