@@ -17,7 +17,7 @@
     </v-container>
 
     <!-- Card -->
-    <v-container>
+    <!-- <v-container>
       <v-hover v-slot="{ hover }">
         <v-card
           width="auto"
@@ -43,8 +43,9 @@
           </v-img>
         </v-card>
       </v-hover>
-    </v-container>
+    </v-container> -->
 
+    <!-- Card -->
     <v-container>
       <v-hover v-slot="{ hover }">
         <v-card
@@ -76,21 +77,28 @@
     <!-- Card -->
     <v-container>
       <v-hover v-slot="{ hover }">
-        <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-          <v-img
-            lazy-src="https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            src="https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            height="450px"
-          >
-            <v-card-title class="text-h6 white--text">
-              <v-row>
-                <v-col cols="6">
-                  <p class="mt-8 subheading text-left">Make a deal with us!</p>
-                  <v-btn to="/" x-small text color="white"> Learn More </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-          </v-img>
+        <v-card
+          width="auto"
+          :elevation="hover ? 12 : 2"
+          :class="{ 'on-hover': hover }"
+          img="https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          height="450px"
+        >
+          <v-row style="height: 450px" align="center">
+            <v-col>
+              <v-card-title class="text-h4 font-weight-regular mx-4">
+                About Us
+              </v-card-title>
+              <v-card-subtitle class="text-h6 font-weight-light mx-4">
+                Here are more information about PT. Kobaja Nusantara Prima
+              </v-card-subtitle>
+              <v-card-actions class="d-flex mx-5">
+                <v-btn to="/" small plain text color="white">
+                  Learn More
+                </v-btn>
+              </v-card-actions>
+            </v-col>
+          </v-row>
         </v-card>
       </v-hover>
     </v-container>
@@ -98,21 +106,28 @@
     <!-- Card -->
     <v-container>
       <v-hover v-slot="{ hover }">
-        <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-          <v-img
-            lazy-src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-            src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-            height="450px"
-          >
-            <v-card-title class="text-h6 white--text">
-              <v-row>
-                <v-col cols="6">
-                  <p class="mt-8 subheading text-left">Learn more about us!</p>
-                  <v-btn to="/" x-small text color="white"> Learn More </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-          </v-img>
+        <v-card
+          width="auto"
+          :elevation="hover ? 12 : 2"
+          :class="{ 'on-hover': hover }"
+          img="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+          height="450px"
+        >
+          <v-row style="height: 450px" align="center">
+            <v-col>
+              <v-card-title class="text-h4 font-weight-regular mx-4">
+                Contact Us
+              </v-card-title>
+              <v-card-subtitle class="text-h6 font-weight-light mx-4">
+                Our company contact information
+              </v-card-subtitle>
+              <v-card-actions class="d-flex mx-5">
+                <v-btn to="/" small plain text color="white">
+                  Learn More
+                </v-btn>
+              </v-card-actions>
+            </v-col>
+          </v-row>
         </v-card>
       </v-hover>
     </v-container>
