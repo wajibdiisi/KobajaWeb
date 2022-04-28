@@ -19,14 +19,19 @@
     <!-- Card -->
     <v-container>
       <v-hover v-slot="{ hover }">
-        <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
+        <v-card
+          width="auto"
+          :elevation="hover ? 12 : 2"
+          :class="{ 'on-hover': hover }"
+          height="450px"
+        >
           <v-img
             lazy-src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
             src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
-            height="450px"
+            max-height="450px"
           >
             <v-card-title class="text-h6 white--text">
-              <v-row>
+              <v-row align="center" justify="start">
                 <v-col cols="6">
                   <p class="mt-8 subheading text-left">
                     More about our product!
@@ -36,6 +41,34 @@
               </v-row>
             </v-card-title>
           </v-img>
+        </v-card>
+      </v-hover>
+    </v-container>
+
+    <v-container>
+      <v-hover v-slot="{ hover }">
+        <v-card
+          width="auto"
+          :elevation="hover ? 12 : 2"
+          :class="{ 'on-hover': hover }"
+          img="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+          height="450px"
+        >
+          <v-row style="height: 450px" align="center">
+            <v-col>
+              <v-card-title class="text-h4 font-weight-regular mx-4">
+                More about our product
+              </v-card-title>
+              <v-card-subtitle class="text-h6 font-weight-light mx-4">
+                Here are the products that we offer
+              </v-card-subtitle>
+              <v-card-actions class="d-flex mx-5">
+                <v-btn to="/" small plain text color="white">
+                  Learn More
+                </v-btn>
+              </v-card-actions>
+            </v-col>
+          </v-row>
         </v-card>
       </v-hover>
     </v-container>
