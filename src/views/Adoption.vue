@@ -3,18 +3,25 @@
     <!-- Tulisan -->
     <v-container>
       <v-row class="mt-200 justify-center align-center">
-        <v-img class="mt-200" max-height="350" max-width="250" src="@/assets/logo kobaja v.2 trans.png"></v-img>
+        <v-img
+          class="mt-200"
+          max-height="350"
+          max-width="250"
+          src="@/assets/logo kobaja v.2 trans.png"
+        ></v-img>
         <v-row class="my-7 justify-center align-center">
           <h1 class="mb-3 text--primary">PT. Kobaja Prima Nusantara Prima</h1>
           <p class="mx-10 mt-7 text--secondary text-justify">
-            PT Kobaja Nusantara Prima has been developed since August 31, 2018. Main strategy of PT Kobaja Nusantara Prima is leading the
-            company into the best and trustable company in providing steel trading and raw material. We are giving the best value and
-            solution to the customer.The main business of the company is steel trading, providing raw material and mineral to support the 
-            development of steel industry continually.
+            PT Kobaja Nusantara Prima has been developed since August 31, 2018.
+            Main strategy of PT Kobaja Nusantara Prima is leading the company
+            into the best and trustable company in providing steel trading and
+            raw material. We are giving the best value and solution to the
+            customer.The main business of the company is steel trading,
+            providing raw material and mineral to support the development of
+            steel industry continually.
           </p>
           <!-- <v-btn to="/" x-small color="orange"> Learn More </v-btn> -->
         </v-row>
-        
       </v-row>
     </v-container>
 
@@ -26,15 +33,19 @@
             <v-col cols="12">
               <div class="mt-2">
                 <h2>Our Business Preview</h2>
-                <v-img class="my-3" max-height="250" src="@/assets/bannerabout.jpg"></v-img>
+                <v-img
+                  class="my-3"
+                  max-height="250"
+                  src="@/assets/bannerabout.jpg"
+                ></v-img>
                 <p class="font-weight-regular text--secondary text-justify">
-                  Steel Industry is supporting national development in
-                  many fields, and Indonesia has many natural resources such as, iron
-                  ore, coal, and other raw minerals that can support
-                  national steel industry in facing global market challenge. Based on UU No.4/2009 about Mineral and Coal and
-                  Permen ESDM No.7/2012 and also Permen 20/2013,
-                  investment in mineral mining and process has been
-                  increased significantly, especially in providing raw
+                  Steel Industry is supporting national development in many
+                  fields, and Indonesia has many natural resources such as, iron
+                  ore, coal, and other raw minerals that can support national
+                  steel industry in facing global market challenge. Based on UU
+                  No.4/2009 about Mineral and Coal and Permen ESDM No.7/2012 and
+                  also Permen 20/2013, investment in mineral mining and process
+                  has been increased significantly, especially in providing raw
                   material for the steel industry
                 </p>
                 <!-- <h3 class="font-weight-regular">
@@ -72,18 +83,15 @@
             <v-col>
               <h2 class="text--primary">Our Vision</h2>
               <p>
-                Leading the company into the best
-                company in providing steel trading and
-                raw material for the steel industry
+                Leading the company into the best company in providing steel
+                trading and raw material for the steel industry
               </p>
             </v-col>
             <v-col>
               <h2 class="text--primary">Our Mission</h2>
               <p>
-                Providing high quality and the best
-                price of steel trading and raw material
-                for the steel industry and other
-                related industries
+                Providing high quality and the best price of steel trading and
+                raw material for the steel industry and other related industries
               </p>
             </v-col>
           </v-row>
@@ -110,13 +118,15 @@
             <v-col cols="12">
               <h2 class="text--primary">Our Scope of Business</h2>
               <p class="font-weight-regular text--secondary text-justify">
-                  We trades in various commodity including, but not limited to, raw materials, energy, consumable. Our trade consists of the iron & steel industry, the ferro alloy industry, foundry industry, and other industries of the same nature.
-
+                We trades in various commodity including, but not limited to,
+                raw materials, energy, consumable. Our trade consists of the
+                iron & steel industry, the ferro alloy industry, foundry
+                industry, and other industries of the same nature.
               </p>
               <v-img
-                    src="@/assets/scope.png"
-                    width="1000"
-                    class="d-flex mx-auto my-4"
+                src="@/assets/scope.png"
+                width="1000"
+                class="d-flex mx-auto my-4"
               ></v-img>
               <!-- <v-row class="mt-4 justify-center align-center">
                 <v-col lg="6" md="6" sm="12">
@@ -177,71 +187,79 @@
           <v-row>
             <v-col cols="12">
               <div class="mt-2">
-              <h2 class="text--primary">Our Organizational Structure</h2>
-              <v-row>
-                  <v-col cols="12" class="d-flex justify-center mt-5">
+                <h2 class="text--primary">Our Organizational Structure</h2>
+                <v-row class="mt-4">
+                  <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/bagus.png"
-                        max-width="200"
+                        max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
-                        <div class="text-h6 font-weight-regular">
+                        <div class="text-h6 font-weight-regular text-center">
                           Bapa bagud
                         </div>
-                        <div class="font-weight-medium grey--text">Owner</div>
+                        <div class="font-weight-medium grey--text text-center">
+                          Owner
+                        </div>
                       </v-card-text>
                     </v-card>
                   </v-col>
 
-                  <v-col cols="12" class="d-flex justify-center">
+                  <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/bagus.png"
-                        max-width="200"
+                        max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
-                        <div class="text-h6 font-weight-regular">
+                        <div class="text-h6 font-weight-regular text-center">
                           Bapa bagud
                         </div>
-                        <div class="font-weight-medium grey--text">Owner</div>
+                        <div class="font-weight-medium grey--text text-center">
+                          Owner
+                        </div>
                       </v-card-text>
                     </v-card>
                   </v-col>
 
-                  <v-col cols="6" class="d-flex justify-end">
+                  <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/bagus.png"
-                        max-width="200"
+                        max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
-                        <div class="text-h6 font-weight-regular">
+                        <div class="text-h6 font-weight-regular text-center">
                           Bapa bagud
                         </div>
-                        <div class="font-weight-medium grey--text">Owner</div>
+                        <div class="font-weight-medium grey--text text-center">
+                          Owner
+                        </div>
                       </v-card-text>
                     </v-card>
                   </v-col>
-                  <v-col cols="6" class="d-flex justify-start">
+                  <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/bagus.png"
-                        max-width="200"
+                        max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
-                        <div class="text-h6 font-weight-regular">
+                        <div class="text-h6 font-weight-regular text-center">
                           Bapa bagud
                         </div>
-                        <div class="font-weight-medium grey--text">Owner</div>
+                        <div class="font-weight-medium grey--text text-center">
+                          Owner
+                        </div>
                       </v-card-text>
                     </v-card>
                   </v-col>
@@ -251,8 +269,6 @@
           </v-row>
         </v-container>
       </v-card>
-
-     
     </v-container>
   </div>
 </template>
