@@ -73,7 +73,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .title_produk_pop{
   font-size: 2rem;
 }
