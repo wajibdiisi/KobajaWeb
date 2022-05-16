@@ -5,8 +5,8 @@
         <div class="d-flex fill-height" style="flex-direction:column">
           <div class="d-flex fill-height align-center justify-center">
             <v-card flat color="transparent">
-              <v-card-text  ><h1 class="contact">Contact Us</h1></v-card-text>
-              <v-card-subtitle ><h2><p>{{ $t("message.hello") }}</p></h2></v-card-subtitle>
+              <v-card-text  ><h1 class="contact">{{ $t("contactUs.contactUsTitle") }}</h1></v-card-text>
+              <v-card-subtitle ><h2><p>{{ $t("contactUs.contactUsText") }}</p></h2></v-card-subtitle>
             </v-card>
           </div>
         
@@ -16,7 +16,7 @@
   <v-row>
     <v-col cols="12" md="6" sm="6" offset-md="3" offset-sm="3">
    
-   <h1 class="text-center mt-15">Kontak</h1>
+   <h1 class="text-center mt-15">{{ $t("contactUs.contact") }}</h1>
  
   <v-card
     
@@ -121,7 +121,7 @@
       color="error"
       class="mr-4"
     >
-     Kirim Pesan
+     {{ $t("contactUs.sendMessage") }}
     </v-btn>
 
  
