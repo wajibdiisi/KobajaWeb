@@ -5,7 +5,7 @@
         <div class="d-flex fill-height" style="flex-direction:column">
           <div class="d-flex fill-height align-center justify-center">
             <v-card flat color="transparent">
-              <v-card-text  ><h1 class="text-center">Contact Us</h1></v-card-text>
+              <v-card-text  ><h1 class="contact">Contact Us</h1></v-card-text>
               <v-card-subtitle ><h2><p>{{ $t("message.hello") }}</p></h2></v-card-subtitle>
             </v-card>
           </div>
@@ -149,7 +149,6 @@ export default {
 };
 </script>
 <style>
-
 .trivia {
   font-size: 2.5rem;
   text-align: center;
@@ -174,5 +173,9 @@ export default {
 }
 .v-tabs-items {
   background-color: transparent !important;
+}
+.contact{
+  text-align: center;
+  font-size: 2.5rem;
 }
 </style>

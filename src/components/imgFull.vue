@@ -19,8 +19,9 @@
             class="d-flex justify-start align-center py-7"
           >
             <v-card-text>
-              <v-card-title class="font-weight-bold">Iron ore</v-card-title>
-              <v-card-subtitle
+              <v-card-title class="title_produk_pop">Iron ore</v-card-title>
+              <hr>
+              <v-card-subtitle class="desc_title_produk_pop"
                 >Iron ores are rocks and minerals from which metallic iron can
                 be economically extracted. The ores are usually rich in iron
                 oxides and vary in color from dark grey, bright yellow, or deep
@@ -73,6 +74,14 @@ export default {
 </script>
 
 <style>
+.title_produk_pop{
+  font-size: 2rem;
+}
+.desc_title_produk_pop{
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  text-align: justify;
+}
 .custom-icon {
   margin: 5px 29px;
   color: #ed7d2b;

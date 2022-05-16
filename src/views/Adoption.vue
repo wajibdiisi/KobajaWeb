@@ -10,8 +10,8 @@
           src="@/assets/logo kobaja v.2 trans.png"
         ></v-img>
         <v-row class="my-7 justify-center align-center">
-          <h1 class="mb-3 text--primary">PT. Kobaja Prima Nusantara Prima</h1>
-          <p class="mx-10 mt-7 text--secondary text-justify">
+          <h1 class="title_about">PT. Kobaja Prima Nusantara Prima</h1>
+          <p class="mx-10 mt-7 text--secondary desc_about">
             PT Kobaja Nusantara Prima has been developed since August 31, 2018.
             Main strategy of PT Kobaja Nusantara Prima is leading the company
             into the best and trustable company in providing steel trading and
@@ -32,13 +32,13 @@
           <v-row>
             <v-col cols="12">
               <div class="mt-2">
-                <h2>Our Business Preview</h2>
+                <h2 class="sub_divisi_about">Our Business Preview</h2>
                 <v-img
                   class="my-3"
                   max-height="250"
                   src="@/assets/bannerabout.jpg"
                 ></v-img>
-                <p class="font-weight-regular text--secondary text-justify">
+                <p class="font-weight-regular text--secondary desc_about">
                   Steel Industry is supporting national development in many
                   fields, and Indonesia has many natural resources such as, iron
                   ore, coal, and other raw minerals that can support national
@@ -81,15 +81,17 @@
           </v-row>
           <v-row>
             <v-col>
-              <h2 class="text--primary">Our Vision</h2>
-              <p>
+              <h2 class="sub_divisi_about">Our Vision</h2>
+              <br>
+              <p class="font-weight-regular text--secondary desc_about">
                 Leading the company into the best company in providing steel
                 trading and raw material for the steel industry
               </p>
             </v-col>
             <v-col>
-              <h2 class="text--primary">Our Mission</h2>
-              <p>
+              <h2 class="sub_divisi_about">Our Mission</h2>
+              <br>
+              <p class="font-weight-regular text--secondary desc_about">
                 Providing high quality and the best price of steel trading and
                 raw material for the steel industry and other related industries
               </p>
@@ -116,8 +118,9 @@
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
-              <h2 class="text--primary">Our Scope of Business</h2>
-              <p class="font-weight-regular text--secondary text-justify">
+              <h2 class="sub_divisi_about">Our Scope of Business</h2>
+              <br>
+              <p class="font-weight-regular text--secondary desc_about">
                 We trades in various commodity including, but not limited to,
                 raw materials, energy, consumable. Our trade consists of the
                 iron & steel industry, the ferro alloy industry, foundry
@@ -187,7 +190,7 @@
           <v-row>
             <v-col cols="12">
               <div class="mt-2">
-                <h2 class="text--primary">Our Organizational Structure</h2>
+                <h2 class="sub_divisi_about">Our Organizational Structure</h2>
                 <v-row class="mt-4">
                   <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
@@ -198,7 +201,7 @@
                       >
                       </v-img>
                       <v-card-text class="pt-2">
-                        <div class="text-h6 font-weight-regular text-center">
+                        <div class="text-h6 text-center desc_about">
                           Bapa bagud
                         </div>
                         <div class="font-weight-medium grey--text text-center">
@@ -273,7 +276,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "Home",
   data() {
@@ -311,5 +314,20 @@ export default {
 }
 .v-tabs-items {
   background-color: transparent !important;
+}
+.title_about{
+  font-size: 2.5rem;
+}
+.desc_about{
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.sub_divisi_about{
+  font-size: 2rem;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1350px;
+    }
 }
 </style>
