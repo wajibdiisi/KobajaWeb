@@ -12,13 +12,7 @@
         <v-row class="my-7 justify-center align-center">
           <h1 class="title_about">PT. Kobaja Prima Nusantara Prima</h1>
           <p class="mx-10 mt-7 text--secondary desc_about">
-            PT Kobaja Nusantara Prima has been developed since August 31, 2018.
-            Main strategy of PT Kobaja Nusantara Prima is leading the company
-            into the best and trustable company in providing steel trading and
-            raw material. We are giving the best value and solution to the
-            customer.The main business of the company is steel trading,
-            providing raw material and mineral to support the development of
-            steel industry continually.
+            {{ $t("aboutUs.description") }}
           </p>
           <!-- <v-btn to="/" x-small color="orange"> Learn More </v-btn> -->
         </v-row>
@@ -32,21 +26,14 @@
           <v-row>
             <v-col cols="12">
               <div class="mt-2">
-                <h2 class="sub_divisi_about">Our Business Preview</h2>
+                <h2 class="sub_divisi_about">{{ $t("aboutUs.businessPreview") }}</h2>
                 <v-img
                   class="my-3"
                   max-height="250"
                   src="@/assets/bannerabout.jpg"
                 ></v-img>
                 <p class="font-weight-regular text--secondary desc_about">
-                  Steel Industry is supporting national development in many
-                  fields, and Indonesia has many natural resources such as, iron
-                  ore, coal, and other raw minerals that can support national
-                  steel industry in facing global market challenge. Based on UU
-                  No.4/2009 about Mineral and Coal and Permen ESDM No.7/2012 and
-                  also Permen 20/2013, investment in mineral mining and process
-                  has been increased significantly, especially in providing raw
-                  material for the steel industry
+                 {{ $t("aboutUs.businessReviewDescription") }}
                 </p>
                 <!-- <h3 class="font-weight-regular">
                   ● Giving the best value and solution to the customer.
@@ -81,19 +68,17 @@
           </v-row>
           <v-row>
             <v-col>
-              <h2 class="sub_divisi_about">Our Vision</h2>
+              <h2 class="sub_divisi_about">{{ $t("aboutUs.visionTitle") }}</h2>
               <br>
               <p class="font-weight-regular text--secondary desc_about">
-                Leading the company into the best company in providing steel
-                trading and raw material for the steel industry
+                {{ $t("aboutUs.visionDescription") }}
               </p>
             </v-col>
             <v-col>
-              <h2 class="sub_divisi_about">Our Mission</h2>
+              <h2 class="sub_divisi_about">{{ $t("aboutUs.missionTitle") }}</h2>
               <br>
               <p class="font-weight-regular text--secondary desc_about">
-                Providing high quality and the best price of steel trading and
-                raw material for the steel industry and other related industries
+                {{ $t("aboutUs.missionDescription") }}
               </p>
             </v-col>
           </v-row>
@@ -118,13 +103,10 @@
         <v-container class="container-tab">
           <v-row>
             <v-col cols="12">
-              <h2 class="sub_divisi_about">Our Scope of Business</h2>
+              <h2 class="sub_divisi_about">{{ $t("aboutUs.businessScopeTitle") }}</h2>
               <br>
               <p class="font-weight-regular text--secondary desc_about">
-                We trades in various commodity including, but not limited to,
-                raw materials, energy, consumable. Our trade consists of the
-                iron & steel industry, the ferro alloy industry, foundry
-                industry, and other industries of the same nature.
+                {{ $t("aboutUs.businessScopeDescription") }}
               </p>
               <v-img
                 src="@/assets/scope.png"

@@ -1,7 +1,9 @@
 <template>
   <!-- <div class="backdrop-confirm" @click.self="closeConfirm"> -->
   <!-- <div class="modal-container"> -->
-  <div class="text-center">
+ 
+ <div class="text-center">
+   
     <v-dialog v-model="dialog" width="1000">
       <template v-slot:activator="{ on, attrs }">
        
@@ -21,7 +23,10 @@
               <v-card-title class="title_produk_pop">{{data.name}}</v-card-title>
               <hr>
               <v-card-subtitle class="desc_title_produk_pop"
-                >{{data.description_en}}</v-card-subtitle
+                v-if="$i18n.locale =='en'">{{data.description_en}}</v-card-subtitle
+              >
+              <v-card-subtitle class="desc_title_produk_pop"
+                v-if="$i18n.locale =='id'">{{data.description_id}}</v-card-subtitle
               >
               <!-- <h1 class="mb-4">Latest Product</h1>
               <p>

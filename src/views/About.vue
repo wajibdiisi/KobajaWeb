@@ -25,9 +25,9 @@
       <!-- Tabs -->
       <v-tabs v-model="tabs" background-color="transparent " dark>
         <v-tab background-color="transparent " dark> All </v-tab>
-        <v-tab> Raw Materials </v-tab>
-        <v-tab> Energy </v-tab>
-        <v-tab> Consumable </v-tab>
+        <v-tab> {{ $t("product.categoryRaw") }} </v-tab>
+        <v-tab> {{ $t("product.categoryEnergy") }} </v-tab>
+        <v-tab> {{ $t("product.categoryConsumable") }} </v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="tabs">

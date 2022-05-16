@@ -10,16 +10,16 @@
     </v-toolbar-title>
     <v-toolbar-items class="hidden-xs-only">
       <v-card-actions>
-        <v-btn to="/" x-small color="white" text> Home </v-btn>
+        <v-btn to="/" x-small color="white" text>  {{ $t("header.home") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/about" x-small color="white" text> Product </v-btn>
+        <v-btn to="/about" x-small color="white" text>  {{ $t("header.product") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/contactus" x-small color="white" text> Contact Us </v-btn>
+        <v-btn to="/contactus" x-small color="white" text>  {{ $t("header.contactUs") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/adoption" x-small color="white" text> About Us </v-btn>
+        <v-btn to="/adoption" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
       </v-card-actions>
     </v-toolbar-items>
     <v-spacer></v-spacer>

@@ -5,11 +5,10 @@
       <v-row class="mt-10">
         <v-col>
           <p class="trivia">
-            Kobaja Nusantara Prima offers the
-            <span class="trivia-01"> best quality </span> of metal in the
-            industry including but not limited to
+           {{ $t("home.description.firstText") }}
+            <span class="trivia-01"> {{ $t("home.description.firstColorText") }}</span> {{ $t("home.description.secondText") }}
             <span class="trivia-04">
-              iron, steel, ferro alloy, and foundry industry.
+              {{ $t("home.description.secondColorText") }}
             </span>
           </p>
           <p class="trivia">
@@ -141,9 +140,13 @@
     <v-container>
       <v-row class="mt-2 mb-10">
         <v-col>
-          <p class="trivia">
-            We provide the best <span class="trivia-01"> value </span> and
-            <span class="trivia-02"> solution </span>
+          <p class="trivia"  v-if="$i18n.locale =='en'">
+             {{ $t("home.bestValue.provideBest") }} <span class="trivia-01"> {{ $t("home.bestValue.value") }}  </span> {{ $t("home.bestValue.and") }} 
+            <span class="trivia-02"> {{ $t("home.bestValue.solution") }}  </span>
+          </p>
+           <p class="trivia"  v-if="$i18n.locale =='id'">
+             {{ $t("home.bestValue.provideBest") }} <span class="trivia-01"> {{ $t("home.bestValue.value") }}  </span> {{ $t("home.bestValue.and") }} 
+            <span class="trivia-02"> {{ $t("home.bestValue.solution") }}  </span> terbaik
           </p>
         </v-col>
       </v-row>
