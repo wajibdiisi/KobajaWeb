@@ -325,9 +325,5 @@ export default {
 .sub_divisi_about{
   font-size: 2rem;
 }
-@media (min-width: 1200px) {
-    .container{
-        max-width: 1350px;
-    }
-}
+
 </style>

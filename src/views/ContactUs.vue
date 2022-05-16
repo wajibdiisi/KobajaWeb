@@ -148,7 +148,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .trivia {
   font-size: 2.5rem;
   text-align: center;

@@ -183,9 +183,5 @@ export default {};
 .show-btns {
   color: rgba(255, 255, 255, 1) !important;
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1350px;
-  }
-}
+
 </style>
