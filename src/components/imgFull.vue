@@ -4,11 +4,10 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="1000">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
-          Click Me
-        </v-btn>
+       
+             <v-img :src="data.photo" class="img-fluid" v-bind="attrs" v-on="on"></v-img>
       </template>
-
+  
       <v-card flat color="#404040">
         <v-row justify="center" no-gutters class="mx-3">
           <v-col
@@ -19,15 +18,10 @@
             class="d-flex justify-start align-center py-7"
           >
             <v-card-text>
-              <v-card-title class="title_produk_pop">Iron ore</v-card-title>
+              <v-card-title class="title_produk_pop">{{data.name}}</v-card-title>
               <hr>
               <v-card-subtitle class="desc_title_produk_pop"
-                >Iron ores are rocks and minerals from which metallic iron can
-                be economically extracted. The ores are usually rich in iron
-                oxides and vary in color from dark grey, bright yellow, or deep
-                purple to rusty red. The iron is usually found in the form of
-                magnetite, hematite, goethite, limonite or
-                siderite.</v-card-subtitle
+                >{{data.description_en}}</v-card-subtitle
               >
               <!-- <h1 class="mb-4">Latest Product</h1>
               <p>
@@ -46,7 +40,7 @@
             cols="12"
             class="d-flex py-7 mx-auto justify-center"
           >
-            <v-img src="@/assets/ironOres.jpg" max-width="300"></v-img>
+            <v-img :src="data.photo" max-width="300"></v-img>
           </v-col>
         </v-row>
         <v-divider></v-divider>
@@ -62,6 +56,7 @@
 <script>
 export default {
   name: "Modal",
+  props :['data'],
   methods: {
     closeConfirm() {
       this.$emit("close");
@@ -123,5 +118,11 @@ export default {
 }
 .icon {
   margin: 0 auto;
+}
+.img-fluid {
+  max-width: 400px;
+  min-height: 250px;
+  max-height: 135px;
+  object-fit: cover;
 }
 </style>

@@ -5,6 +5,7 @@
         <v-col lg="6" md="6" sm="12">
           <h1 class="title_produk">Latest Product</h1>
           <p class="desc_produk">
+            {{tabs}}
             Iron ores are rocks and minerals from which metallic iron can be
             economically extracted. The ores are usually rich in iron oxides and
             vary in color from dark grey, bright yellow, or deep purple to rusty
@@ -17,15 +18,16 @@
           <v-img
             class="img_produk"
             src="@/assets/logo kobaja v.2 trans.png"
+           
           ></v-img>
         </v-col>
       </v-row>
       <!-- Tabs -->
       <v-tabs v-model="tabs" background-color="transparent " dark>
         <v-tab background-color="transparent " dark> All </v-tab>
-        <v-tab> Product 1 </v-tab>
-        <v-tab> Product 2 </v-tab>
-        <v-tab> Product 3 </v-tab>
+        <v-tab> Raw Materials </v-tab>
+        <v-tab> Energy </v-tab>
+        <v-tab> Consumable </v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="tabs">
@@ -33,115 +35,14 @@
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
-                <v-col sm="4" md="4" lg="3">
-                  <imgFull v-if="showImage" @close="toggleImage">
-                    <v-img
-                      src="@/assets/alloyOre.jpg"
-                      class="img-fluid"
-                    ></v-img>
+                
+                <v-col v-for="(product, index) of products" :key="index" sm="4" md="4" lg="3">
+                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
+                 
                   </imgFull>
                 </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img src="@/assets/alumina.jpg" class="img-fluid"></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/anthracite.jpeg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/carbonRiser.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img src="@/assets/coke.jpg" class="img-fluid"></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/ferroAlloys.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/cokingCoal.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/highCalorieCoal.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/hotBriquettedIron.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img src="@/assets/ironOres.jpg" class="img-fluid"></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/petroleumCoke.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img src="@/assets/pigIron.jpg" class="img-fluid"></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img src="@/assets/scrap.jpg" class="img-fluid"></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/spongeIron.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-                <v-col sm="4" md="4" lg="3">
-                  <v-img
-                    src="@/assets/thermalCoal.jpg"
-                    class="img-fluid"
-                  ></v-img>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
-        </v-tab-item>
-
-        <v-tab-item class="mt-5">
-          <v-card flat color="basil">
-            <v-container class="container-tab">
-              <v-row>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-              </v-row>
-            </v-container>
-
-            <v-container class="container-tab">
-              <v-row>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
+              
+                 
               </v-row>
             </v-container>
           </v-card>
@@ -150,48 +51,45 @@
         <v-tab-item>
           <v-card flat color="basil">
             <v-container class="container-tab">
-              <v-row>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
+              <v-row class="tab">
+                
+                <v-col v-for="(product, index) of filteredList" :key="index" sm="4" md="4" lg="3">
+                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
+                 
+                  </imgFull>
                 </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-              </v-row>
-            </v-container>
-
-            <v-container class="container-tab">
-              <v-row>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
+              
+                 
               </v-row>
             </v-container>
           </v-card>
-        </v-tab-item>
-
-        <v-tab-item>
+        </v-tab-item><v-tab-item>
           <v-card flat color="basil">
             <v-container class="container-tab">
-              <v-row>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
+              <v-row class="tab">
+                
+                <v-col v-for="(product, index) of filteredList" :key="index" sm="4" md="4" lg="3">
+                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
+                 
+                  </imgFull>
                 </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
+              
+                 
+              </v-row>
+            </v-container>
+          </v-card>
+        </v-tab-item><v-tab-item>
+          <v-card flat color="basil">
+            <v-container class="container-tab">
+              <v-row class="tab">
+                
+                <v-col v-for="(product, index) of filteredList" :key="index" sm="4" md="4" lg="3">
+                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
+                 
+                  </imgFull>
                 </v-col>
-                <v-col cols="4">
-                  <v-img src="@/assets/index.jpg"></v-img>
-                </v-col>
+              
+                 
               </v-row>
             </v-container>
           </v-card>
@@ -201,6 +99,7 @@
   </div>
 </template>
 <script>
+import axios from 'axios';
 import imgFull from "@/components/imgFull.vue";
 export default {
   components: {
@@ -209,9 +108,20 @@ export default {
   name: "Home",
   data() {
     return {
+      currentTab : '',
       tabs: null,
+      products : [],
       showImage: [],
     };
+  },
+  async created() {
+    try{
+    const resp = await axios.get("https://kobajadatabase.herokuapp.com/kobaja-product")
+    this.products = resp.data.data
+    }
+    catch(e){
+      this.errors.push(e)
+    }
   },
   methods: {
     toggleImage(id) {
@@ -221,6 +131,19 @@ export default {
       this.showImage[id] = true;
     },
   },
+  computed :{
+    filteredList: function(){
+      return this.products.filter((product) =>{
+        if(this.tabs == 1){
+          return product.category.includes("Raw Materials");
+        }else if(this.tabs ==2)
+          return product.category.includes("Energy")
+          else if (this.tabs ==3)
+          return product.category.includes("Consumable")
+      }
+      )
+    }
+  }
 };
 </script>
 <style scoped>
