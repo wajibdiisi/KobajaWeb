@@ -265,5 +265,9 @@ export default {
 .desc_produk {
   font-size: 1.5rem;
 }
-
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1350px;
+    }
+}
 </style>
