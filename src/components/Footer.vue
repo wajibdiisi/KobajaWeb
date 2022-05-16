@@ -3,7 +3,16 @@
     <v-container>
     <v-card flat tile outlined color="transparent">
       <v-card-text class="text-right">
-       <v-btn @click="changeCountry()">test</v-btn>
+        <v-col md="1" offset-md="11">
+       
+       <v-select  @change="changeCountry(selectedCountry)"
+       v-model="selectedCountry"
+          :items="items"
+          label="Language"
+          item-value="value"
+          item-text="name"
+        ></v-select>
+      </v-col>
       </v-card-text>
 <hr class="line">
       <v-card-text class="white--text pt-0">
@@ -44,12 +53,21 @@
 <script>
 export default {
   data: () => ({
+    selectedCountry : {name : "English", value : "en"},
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+    items: [{
+      name : "English",
+      value : "en"
+    },{
+      name : "Indonesia",
+      value : "id"
+    }],
   }),
   methods : {
-    changeCountry(){
-      console.log(this.$root.$i18n.locale);
-      this.$root.$i18n.locale = "id";
+    changeCountry(value){
+      console.log(value)
+      this.$root.$i18n.locale = value;
+      
     }
   }
 };
