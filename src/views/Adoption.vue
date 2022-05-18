@@ -177,17 +177,17 @@
                   <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
-                        src="@/assets/bagus.png"
+                        src="@/assets/People2.png"
                         max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
                         <div class="text-h6 text-center desc_about">
-                          Bapa bagud
+                          GA Marlinawati
                         </div>
                         <div class="font-weight-medium grey--text text-center">
-                          Owner
+                          Comissioner
                         </div>
                       </v-card-text>
                     </v-card>
@@ -196,17 +196,17 @@
                   <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
-                        src="@/assets/bagus.png"
+                        src="@/assets/People1.png"
                         max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
                         <div class="text-h6 font-weight-regular text-center">
-                          Bapa bagud
+                          IWG Darmayadi
                         </div>
                         <div class="font-weight-medium grey--text text-center">
-                          Owner
+                          Director
                         </div>
                       </v-card-text>
                     </v-card>
@@ -215,17 +215,17 @@
                   <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
-                        src="@/assets/bagus.png"
+                        src="@/assets/People3.png"
                         max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
                         <div class="text-h6 font-weight-regular text-center">
-                          Bapa bagud
+                          Yang Yung Mo
                         </div>
                         <div class="font-weight-medium grey--text text-center">
-                          Owner
+                          Commercial Director 
                         </div>
                       </v-card-text>
                     </v-card>
@@ -233,17 +233,17 @@
                   <v-col cols="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
-                        src="@/assets/bagus.png"
+                        src="@/assets/People4.png"
                         max-width="250"
                         class="mx-8 mt-4"
                       >
                       </v-img>
                       <v-card-text class="pt-2">
                         <div class="text-h6 font-weight-regular text-center">
-                          Bapa bagud
+                          Triesna Mahasti
                         </div>
                         <div class="font-weight-medium grey--text text-center">
-                          Owner
+                          Finance Director 
                         </div>
                       </v-card-text>
                     </v-card>

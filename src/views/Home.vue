@@ -11,11 +11,11 @@
               {{ $t("home.description.secondColorText") }}
             </span>
           </p>
-          <p class="trivia">
+          <!-- <p class="trivia">
             Pt. <span class="trivia-01"> Kobaja </span>
             <span class="trivia-02"> Prima </span>
             <span class="trivia-03"> Nusantara </span>
-          </p>
+          </p> -->
         </v-col>
       </v-row>
     </v-container>
@@ -51,7 +51,7 @@
 
     <!-- Card -->
     <v-container>
-      <v-hover v-slot="{ hover }">
+      <v-hover class="my-2" v-slot="{ hover }">
         <v-card
           width="auto"
           :elevation="hover ? 12 : 2"
@@ -68,7 +68,7 @@
                 Here are the products that we offer
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
-                <v-btn to="/" small plain text color="white">
+                <v-btn to="/about" small plain text color="white">
                   Learn More
                 </v-btn>
               </v-card-actions>
@@ -80,7 +80,7 @@
 
     <!-- Card -->
     <v-container>
-      <v-hover v-slot="{ hover }">
+      <v-hover class="my-2" v-slot="{ hover }">
         <v-card
           width="auto"
           :elevation="hover ? 12 : 2"
@@ -97,7 +97,7 @@
                 Here are more information about PT. Kobaja Nusantara Prima
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
-                <v-btn to="/" small plain text color="white">
+                <v-btn to="/adoption" small plain text color="white">
                   Learn More
                 </v-btn>
               </v-card-actions>
@@ -109,7 +109,7 @@
 
     <!-- Card -->
     <v-container>
-      <v-hover v-slot="{ hover }">
+      <v-hover class="my-2" v-slot="{ hover }">
         <v-card
           width="auto"
           :elevation="hover ? 12 : 2"
@@ -126,7 +126,7 @@
                 Our company contact information
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
-                <v-btn to="/" small plain text color="white">
+                <v-btn to="/contactus" small plain text color="white">
                   Learn More
                 </v-btn>
               </v-card-actions>
@@ -168,7 +168,7 @@ export default {};
   color: #f5bd3c;
 }
 .trivia-02 {
-  color: #c23331;
+  color: #3ac569;
 }
 .trivia-03 {
   color: #414cf0;

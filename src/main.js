@@ -24,7 +24,7 @@ const i18n = new VueI18n({
       contactUs: {
         contact: "Contact",
         contactUsTitle: "Contact Us",
-        contactUsText: 'want to make a deal with the product that we can provide? ',
+        contactUsText: 'Want to make a deal with the product that we can provide?',
         sendMessage: "Send Message",
         greeting: 'good morning',
         test: 'Im currently in 3rd grade of junior high school, every day I live with my three best friends, Aris, Andri, and Ana. The four of us have been friends since childhood. One time we wrote a friendship agreement letter on a piece of paper that was put in a bottle, then the bottle was under a tree which we would open the letter when we received the results of the graduation exam.'
@@ -55,7 +55,7 @@ const i18n = new VueI18n({
       },
       home: {
         bestValue: {
-          provideBest: "We provide the best ",
+          provideBest: "Providing the best ",
           value: "value",
           and: "and",
           solution: "solution"

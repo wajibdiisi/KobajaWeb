@@ -20,16 +20,16 @@
   
 
         <v-list-item-content>
-          <v-list-item-title>PT. Bapanya Bagud</v-list-item-title>
-          <v-list-item-subtitle>Jl. H.R. Rasuna Said Kav. 1, Kuningan</v-list-item-subtitle>
+          <v-list-item-title>PT. Kobaja Nusantara Prima</v-list-item-title>
+          <v-list-item-subtitle>Jl. Antartika II, Kav.B4/2 – B4/3 Kec.Grogol</v-list-item-subtitle>
             <v-list-item-subtitle>
-          DKI Jakarta 12980
+          Cilegon, Banten
         </v-list-item-subtitle>
         <v-list-item-subtitle>
-         Telephone: +62 21 831 5005
+         Telephone: 0254 7735463
         </v-list-item-subtitle>
         <v-list-item-subtitle>
-         Email: lgs@lgslaw.co.id
+         Email: kobajanp@gmail.com
         </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>

@@ -33,13 +33,13 @@
    <v-list-item>
         <v-list-item-icon>
           <v-icon color="indigo">
-            mdi-email
+            mdi-map-marker
           </v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>Jl.Ir. H. Juanda 3 No. 17-19, RT.008/RW.002, Kel.Kebon Kelapa Kec. Gambir, Jakarta Pusat 10120</v-list-item-title>
-          <v-list-item-subtitle>Jl.Ir. H. Juanda 3 No. 17-19, RT.008/RW.002, Kel.Kebon Kelapa Kec. Gambir, Jakarta Pusat 10120</v-list-item-subtitle>
+          <v-list-item-title>Jl. Antartika II, Kav.B4/2</v-list-item-title>
+          <v-list-item-subtitle> – B4/3 Kec.Grogol, Cilegon</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <v-list-item>
@@ -50,32 +50,32 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>aliconnors@example.com</v-list-item-title>
-          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+          <v-list-item-title>kobajanp@gmail.com</v-list-item-title>
+          <!-- <v-list-item-subtitle>Personal</v-list-item-subtitle> -->
         </v-list-item-content>
       </v-list-item>
       <v-list-item>
         <v-list-item-icon>
           <v-icon color="indigo">
-            mdi-email
+            mdi-phone
           </v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>aliconnors@example.com</v-list-item-title>
-          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+          <v-list-item-title>0254 7735463</v-list-item-title>
+          <!-- <v-list-item-subtitle>Personal</v-list-item-subtitle> -->
         </v-list-item-content>
       </v-list-item>
        <v-list-item>
         <v-list-item-icon>
           <v-icon color="indigo">
-            mdi-email
+            mdi-whatsapp
           </v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>aliconnors@example.com</v-list-item-title>
-          <v-list-item-subtitle>Personal</v-list-item-subtitle>
+          <v-list-item-title>+62 813-8669-2047</v-list-item-title>
+          <!-- <v-list-item-subtitle>Personal</v-list-item-subtitle> -->
         </v-list-item-content>
       </v-list-item>
   </v-col>
@@ -97,13 +97,13 @@
     ></v-text-field>
     
     <v-text-field
-      label="No Telp"
+      label="Phone Number"
       required
     ></v-text-field>
 
 
  <v-textarea
-          label="Pesan"
+          label="Message"
           auto-grow
           rows="3"
           row-height="25"
