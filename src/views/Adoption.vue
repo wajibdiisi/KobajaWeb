@@ -10,7 +10,8 @@
           src="@/assets/logo kobaja v.2 trans.png"
         ></v-img>
         <v-row class="my-7 justify-center align-center">
-          <h1 class="title_about">PT. Kobaja Prima Nusantara Prima</h1>
+          <v-col cols="12">
+          <h1 class="title_about text-center">PT. Kobaja Prima Nusantara Prima</h1></v-col>
           <p class="mx-10 mt-7 text--secondary desc_about">
             {{ $t("aboutUs.description") }}
           </p>
@@ -312,4 +313,5 @@ export default {
         max-width: 1350px;
     }
 }
+
 </style>

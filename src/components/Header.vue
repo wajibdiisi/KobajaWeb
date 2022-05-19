@@ -133,4 +133,7 @@ background-color: #121212 !important;
 .v-sheet.theme--dark.v-toolbar.v-toolbar--flat.black {
 background-color: #121212 !important;
 }
+html,body{
+    overflow-x: hidden;
+}
 </style>

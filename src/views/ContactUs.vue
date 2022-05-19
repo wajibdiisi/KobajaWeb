@@ -82,23 +82,26 @@
   <v-divider vertical></v-divider>
   <v-col cols="12" md="7" sm="7">
       <v-card-text>
-    <v-form
+    <v-form @submit.prevent="sendEmail"
     ref="form"
     lazy-validation
   >
     <v-text-field
       label="Name"
       required
+       v-model="name"
     ></v-text-field>
 
     <v-text-field
       label="Email"
       required
+      v-model="email"
     ></v-text-field>
     
     <v-text-field
       label="Phone Number"
       required
+       v-model="phoneNumber"
     ></v-text-field>
 
 
@@ -108,6 +111,7 @@
           rows="3"
           row-height="25"
           shaped
+          v-model="message"
         ></v-textarea>
 
    <vue-recaptcha sitekey="6Ldli5kfAAAAAFNV5IsUyYXtJMZbrvV79Kgb7Jja"></vue-recaptcha>
@@ -120,6 +124,7 @@
     <v-btn
       color="error"
       class="mr-4"
+      type="submit"
     >
      {{ $t("contactUs.sendMessage") }}
     </v-btn>
@@ -136,6 +141,7 @@
 </template>
 <script>
  import { VueRecaptcha } from 'vue-recaptcha';
+ import emailjs from 'emailjs-com';
 export default {
   name: "ContactUs",
   components: {
@@ -144,8 +150,32 @@ export default {
   data() {
     return {
       tabs: null,
+      name : '',
+      email : '',
+      message : '',
+      phoneNumber : ''
     };
   },
+  methods : {
+      sendEmail() {
+      try {
+        console.log(this.message)
+        emailjs.send('service_p5f0my8', 'template_mblg577', {
+          from_name: this.name,
+          email: this.email,
+          message: this.message
+        },'2EvflXwJgDdtdchnd')
+
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+  }
+  
 };
 </script>
 <style scoped>
