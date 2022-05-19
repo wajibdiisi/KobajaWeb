@@ -1,11 +1,10 @@
 <template>
   <div>
     <v-container class="mb-10">
-      <v-row class="mt-4 justify-center align-center">
+      <v-row class="my-4 justify-center align-center">
         <v-col lg="6" md="6" sm="12">
           <h1 class="title_produk">Our Commodity</h1>
           <p class="desc_produk">
-            {{ tabs }}
             We trades in various commodity including, but not limited to, raw
             materials, energy, consumable. Our trade consists of the iron &
             steel industry, foundry industry, and other industies of the same
@@ -16,8 +15,10 @@
         <v-col lg="6" md="6" sm="12">
           <v-img
             class="img_produk"
-            src="@/assets/logo kobaja v.2 trans.png"
-          ></v-img>
+            height="300"
+            src="https://www.mining-technology.com/wp-content/uploads/sites/19/2020/10/Feature-Image-top-ten-metals-and-mining-companies.jpg"
+          >
+          </v-img>
         </v-col>
       </v-row>
 
@@ -32,9 +33,9 @@
 
       <v-tabs-items v-model="tabs">
         <v-tab-item>
-          <v-col lg="12" md="12" sm="12">
-            <h2>Raw Material</h2>
-            <p>
+          <v-col lg="12" md="12" sm="12" style="background: #121212">
+            <h2 class="title_tabs">Raw Material</h2>
+            <p class="desc_tabs">
               Our raw material commodities are including, but not limited to,
               quality iron ores, sponge iron, hot briquetted iron, pig-iron,
               scrap, alloy ores
@@ -66,6 +67,14 @@
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
+                <v-col lg="12" md="12" sm="12" style="background: #121212">
+                  <h2 class="title_tabs">Energy</h2>
+                  <p class="desc_tabs">
+                    Our energy commodities are including, but not limited to,
+                    thermal coal, high calorie coal, coking coal, antrachite,
+                    coke, petroleum coke
+                  </p>
+                </v-col>
                 <v-col
                   v-for="(product, index) of filteredList"
                   :key="index"
@@ -87,6 +96,13 @@
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
+                <v-col lg="12" md="12" sm="12" style="background: #121212">
+                  <h2 class="title_tabs">Consumable</h2>
+                  <p class="desc_tabs">
+                    Our consumable commodities are including, but not limited
+                    to, ferro-alloys, fluxes, carbon riser, alumina, etc
+                  </p>
+                </v-col>
                 <v-col
                   v-for="(product, index) of filteredList"
                   :key="index"
@@ -217,6 +233,12 @@ export default {
 }
 .desc_produk {
   font-size: 1.5rem;
+}
+.title_tabs {
+  font-size: 1.75rem;
+}
+.desc_tabs {
+  font-size: 1.25rem;
 }
 @media (min-width: 1200px) {
   .container {
