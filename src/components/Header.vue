@@ -13,13 +13,13 @@
         <v-btn to="/" x-small color="white" text>  {{ $t("header.home") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/about" x-small color="white" text>  {{ $t("header.product") }} </v-btn>
+        <v-btn to="/product" x-small color="white" text>  {{ $t("header.product") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
         <v-btn to="/contactus" x-small color="white" text>  {{ $t("header.contactUs") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/adoption" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
+        <v-btn to="/about-us" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
       </v-card-actions>
     </v-toolbar-items>
     <v-spacer></v-spacer>
@@ -39,33 +39,33 @@
         <v-list class="responsiveMenus">
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/about" x-small color="orange" text>
-                About Us
+              ><v-btn to="/" x-small color="white" text>
+                {{ $t("header.home") }} 
               </v-btn></v-list-item-title
             >
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/adoption" x-small color="orange" text>
-                Adopsi
+              ><v-btn to="/product" x-small color="white" text>
+                {{ $t("header.product") }}
               </v-btn></v-list-item-title
             >
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/care" x-small color="orange" text>
-                Care&Training
+              ><v-btn to="/contactus" x-small color="white" text>
+                 {{ $t("header.contactUs") }}
               </v-btn></v-list-item-title
             >
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/ageconversion" x-small color="orange" text>
-                Age Conversion
+              ><v-btn to="/about-us" x-small color="white" text>
+                {{ $t("header.aboutUs") }}
               </v-btn></v-list-item-title
             >
           </v-list-item>
-          <v-list-item>
+          <!-- <v-list-item>
             <v-list-item-title
               ><v-btn to="/article" x-small color="orange" text>
                 Article
@@ -92,7 +92,7 @@
                 Login
               </v-btn></v-list-item-title
             >
-          </v-list-item>
+          </v-list-item> -->
         </v-list>
       </v-menu>
     </div>
@@ -132,5 +132,8 @@ background-color: #121212 !important;
 }
 .v-sheet.theme--dark.v-toolbar.v-toolbar--flat.black {
 background-color: #121212 !important;
+}
+html,body{
+    overflow-x: hidden;
 }
 </style>

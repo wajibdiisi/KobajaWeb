@@ -6,8 +6,10 @@
    
     <v-dialog v-model="dialog" width="1000">
       <template v-slot:activator="{ on, attrs }">
-       
+       <v-card>
              <v-img :src="data.photo" class="img-fluid" v-bind="attrs" v-on="on"></v-img>
+             <v-card-title>{{data.name}}</v-card-title>
+             </v-card>
       </template>
   
       <v-card flat color="#404040">
@@ -62,6 +64,11 @@
 export default {
   name: "Modal",
   props :['data'],
+  data(){
+    return {
+      dialog : false
+    }
+  },
   methods: {
     closeConfirm() {
       this.$emit("close");
