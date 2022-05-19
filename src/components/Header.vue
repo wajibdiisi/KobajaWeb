@@ -46,7 +46,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/about" x-small color="white" text>
+              ><v-btn to="/product" x-small color="white" text>
                 {{ $t("header.product") }}
               </v-btn></v-list-item-title
             >
@@ -60,7 +60,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/aboutus" x-small color="white" text>
+              ><v-btn to="/about-us" x-small color="white" text>
                 {{ $t("header.aboutUs") }}
               </v-btn></v-list-item-title
             >
