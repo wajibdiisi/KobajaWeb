@@ -3,12 +3,9 @@
     <v-container class="mb-10">
       <v-row class="my-4 justify-center align-center">
         <v-col lg="6" md="6" sm="12">
-          <h1 class="title_produk">Our Commodity</h1>
+          <h1 class="title_produk">{{ $t("product.pageTitle") }}</h1>
           <p class="desc_produk">
-            We trades in various commodity including, but not limited to, raw
-            materials, energy, consumable. Our trade consists of the iron &
-            steel industry, foundry industry, and other industies of the same
-            nature.
+            {{ $t("product.pageDesc") }}
           </p>
           <!-- <v-btn to="/" x-small color="orange"> Learn More </v-btn> -->
         </v-col>
@@ -34,11 +31,9 @@
       <v-tabs-items v-model="tabs">
         <v-tab-item>
           <v-col lg="12" md="12" sm="12" style="background: #121212">
-            <h2 class="title_tabs">Raw Material</h2>
+            <h2 class="title_tabs">{{ $t("product.categoryRaw") }}</h2>
             <p class="desc_tabs">
-              Our raw material commodities are including, but not limited to,
-              quality iron ores, sponge iron, hot briquetted iron, pig-iron,
-              scrap, alloy ores
+              {{ $t("product.categoryRawDesc") }}
             </p>
           </v-col>
           <v-card flat color="basil">
@@ -68,11 +63,9 @@
             <v-container class="container-tab">
               <v-row class="tab">
                 <v-col lg="12" md="12" sm="12" style="background: #121212">
-                  <h2 class="title_tabs">Energy</h2>
+                  <h2 class="title_tabs">{{ $t("product.categoryEnergy") }}</h2>
                   <p class="desc_tabs">
-                    Our energy commodities are including, but not limited to,
-                    thermal coal, high calorie coal, coking coal, antrachite,
-                    coke, petroleum coke
+                    {{ $t("product.categoryEnergyDesc") }}
                   </p>
                 </v-col>
                 <v-col
@@ -97,10 +90,11 @@
             <v-container class="container-tab">
               <v-row class="tab">
                 <v-col lg="12" md="12" sm="12" style="background: #121212">
-                  <h2 class="title_tabs">Consumable</h2>
+                  <h2 class="title_tabs">
+                    {{ $t("product.categoryConsumable") }}
+                  </h2>
                   <p class="desc_tabs">
-                    Our consumable commodities are including, but not limited
-                    to, ferro-alloys, fluxes, carbon riser, alumina, etc
+                    {{ $t("product.categoryConsumableDesc") }}
                   </p>
                 </v-col>
                 <v-col

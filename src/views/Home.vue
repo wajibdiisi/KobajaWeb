@@ -5,8 +5,11 @@
       <v-row class="mt-10">
         <v-col>
           <p class="trivia">
-           {{ $t("home.description.firstText") }}
-            <span class="trivia-01"> {{ $t("home.description.firstColorText") }}</span> {{ $t("home.description.secondText") }}
+            {{ $t("home.description.firstText") }}
+            <span class="trivia-01">
+              {{ $t("home.description.firstColorText") }}</span
+            >
+            {{ $t("home.description.secondText") }}
             <span class="trivia-04">
               {{ $t("home.description.secondColorText") }}
             </span>
@@ -62,10 +65,10 @@
           <v-row style="height: 450px" align="center">
             <v-col>
               <v-card-title class="text-h4 font-weight-regular mx-4">
-                More about our product
+                {{ $t("home.card.productTitle") }}
               </v-card-title>
               <v-card-subtitle class="text-h6 font-weight-light mx-4">
-                Here are the products that we offer
+                {{ $t("home.card.productDesc") }}
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
                 <v-btn to="/product" small plain text color="white">
@@ -91,10 +94,10 @@
           <v-row style="height: 450px" align="center">
             <v-col>
               <v-card-title class="text-h4 font-weight-regular mx-4">
-                About Us
+                {{ $t("home.card.aboutTitle") }}
               </v-card-title>
               <v-card-subtitle class="text-h6 font-weight-light mx-4">
-                Here are more information about PT. Kobaja Nusantara Prima
+                {{ $t("home.card.aboutDesc") }}
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
                 <v-btn to="/about-us" small plain text color="white">
@@ -120,10 +123,10 @@
           <v-row style="height: 450px" align="center">
             <v-col>
               <v-card-title class="text-h4 font-weight-regular mx-4">
-                Contact Us
+                {{ $t("home.card.contactTitle") }}
               </v-card-title>
               <v-card-subtitle class="text-h6 font-weight-light mx-4">
-                Our company contact information
+                {{ $t("home.card.contactDesc") }}
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
                 <v-btn to="/contactus" small plain text color="white">
@@ -140,13 +143,18 @@
     <v-container>
       <v-row class="mt-2 mb-10">
         <v-col>
-          <p class="trivia"  v-if="$i18n.locale =='en'">
-             {{ $t("home.bestValue.provideBest") }} <span class="trivia-01"> {{ $t("home.bestValue.value") }}  </span> {{ $t("home.bestValue.and") }} 
-            <span class="trivia-02"> {{ $t("home.bestValue.solution") }}  </span>
+          <p class="trivia" v-if="$i18n.locale == 'en'">
+            {{ $t("home.bestValue.provideBest") }}
+            <span class="trivia-01"> {{ $t("home.bestValue.value") }} </span>
+            {{ $t("home.bestValue.and") }}
+            <span class="trivia-02"> {{ $t("home.bestValue.solution") }} </span>
           </p>
-           <p class="trivia"  v-if="$i18n.locale =='id'">
-             {{ $t("home.bestValue.provideBest") }} <span class="trivia-01"> {{ $t("home.bestValue.value") }}  </span> {{ $t("home.bestValue.and") }} 
-            <span class="trivia-02"> {{ $t("home.bestValue.solution") }}  </span> terbaik
+          <p class="trivia" v-if="$i18n.locale == 'id'">
+            {{ $t("home.bestValue.provideBest") }}
+            <span class="trivia-01"> {{ $t("home.bestValue.value") }} </span>
+            {{ $t("home.bestValue.and") }}
+            <span class="trivia-02"> {{ $t("home.bestValue.solution") }} </span>
+            terbaik
           </p>
         </v-col>
       </v-row>
@@ -187,8 +195,8 @@ export default {};
   color: rgba(255, 255, 255, 1) !important;
 }
 @media (min-width: 1200px) {
-    .container{
-        max-width: 1350px;
-    }
+  .container {
+    max-width: 1350px;
+  }
 }
 </style>

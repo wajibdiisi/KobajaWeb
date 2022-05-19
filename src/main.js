@@ -42,10 +42,15 @@ const i18n = new VueI18n({
 
       },
       product: {
+        pageTitle: "Our Commodity",
+        pageDesc: "We trades in various commodity including, but not limited to, raw materials, energy, consumable. Our trade consists of the iron & steel industry, foundry industry, and other industies of the same nature.",
         categoryAll: "All",
         categoryRaw: "Raw Materials",
+        categoryRawDesc: "Our raw material commodities are including, but not limited to, quality iron ores, sponge iron, hot briquetted iron, pig-iron, scrap, alloy ores",
         categoryEnergy: "Energy",
+        categoryEnergyDesc: "Our energy commodities are including, but not limited to, thermal coal, high calorie coal, coking coal, antrachite, coke, petroleum coke",
         categoryConsumable: "Consumable",
+        categoryConsumableDesc: "Our consumable commodities are including, but not limited to, ferro-alloys, fluxes, carbon riser, alumina, etc",
       },
       header: {
         home: "Home",
@@ -65,7 +70,15 @@ const i18n = new VueI18n({
           firstColorText: "best quality",
           secondText: "of metal in the industry including but not limited to",
           secondColorText: "iron, steel, ferro alloy, and foundry industry."
-        }
+        },
+        card: {
+          productTitle: "More about our product",
+          productDesc: "Here are the products that we offer",
+          aboutTitle: "About Us",
+          aboutDesc: "Here are more information about PT. Kobaja Nusantara Prima",
+          contactTitle: "Contact Us",
+          contactDesc: "Our company contact information",
+        },
 
       }
     },
@@ -90,10 +103,15 @@ const i18n = new VueI18n({
         businessScopeDescription: "Kami memperdagangkan berbagai komoditas termasuk, namun tidak terbatas pada : bahan mentah, energi, dan bahan habis pakai. Perdangan kami terdiri dari industri besi & baja, industri paduan ferro, industri pengecoran, dan industri lain dalam ruang lingkup yang sama.",
       },
       product: {
+        pageTitle: "Komoditas Kami",
+        pageDesc: "Kami memperdagangkan berbagai komoditas termasuk, namun tidak terbatas pada, bahan mentah, energi, bahan habis pakai. Perdagangan kami terdiri dari industri besi & baja, industri pengecoran, dan industri lain yang sifatnya sama.",
         categoryAll: "Semua",
         categoryRaw: "Bahan Baku",
+        categoryRawDesc: "Komoditas bahan baku kami termasuk, tetapi tidak terbatas pada, bijih besi berkualitas, besi spons, besi briket panas, besi kasar, skrap, bijih paduan",
         categoryEnergy: "Energi",
+        categoryEnergyDesc: "Komoditas energi kami termasuk, namun tidak terbatas pada, batubara termal, batubara berkalori tinggi, batubara kokas, antrakit, kokas, kokas minyak bumi",
         categoryConsumable: "Bahan Habis Pakai",
+        categoryConsumableDesc: "Komoditas konsumsi kami termasuk, namun tidak terbatas pada, paduan besi, fluks, penambah karbon, alumina, dll",
       },
       header: {
         home: "Halaman Utama",
@@ -113,7 +131,15 @@ const i18n = new VueI18n({
           firstColorText: "kualitas terbaik",
           secondText: "di industri baja termasuk namun tidak terbatas pada industri",
           secondColorText: "besi, baja, paduan ferro, dan pengecoran."
-        }
+        },
+        card: {
+          productTitle: "Produk Kami",
+          productDesc: "Berikut adalah produk yang kami tawarkan",
+          aboutTitle: "Tentang Kami",
+          aboutDesc: "Berikut adalah informasi lebih lanjut tentang PT. Kobaja Nusantara Prima",
+          contactTitle: "Kontak Kami",
+          contactDesc: "Informasi kontak perusahaan kami",
+        },
 
       }
     }
