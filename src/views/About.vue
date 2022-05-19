@@ -45,7 +45,7 @@
             <v-container class="container-tab">
               <v-row class="tab">
                 <v-col
-                  v-for="(product, index) of products"
+                  v-for="(product, index) of filteredList"
                   :key="index"
                   sm="4"
                   md="4"
@@ -183,10 +183,10 @@ export default {
   computed: {
     filteredList: function () {
       return this.products.filter((product) => {
-        if (this.tabs == 1) {
+        if (this.tabs == 0) {
           return product.category.includes("Raw Materials");
-        } else if (this.tabs == 2) return product.category.includes("Energy");
-        else if (this.tabs == 3) return product.category.includes("Consumable");
+        } else if (this.tabs == 1) return product.category.includes("Energy");
+        else if (this.tabs == 2) return product.category.includes("Consumable");
       });
     },
   },
