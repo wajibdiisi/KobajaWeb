@@ -163,7 +163,8 @@ export default {
         emailjs.send('service_p5f0my8', 'template_mblg577', {
           from_name: this.name,
           email: this.email,
-          message: this.message
+          message: this.message,
+          phoneNumber : this.phoneNumber,
         },'2EvflXwJgDdtdchnd')
 
       } catch(error) {
@@ -173,6 +174,7 @@ export default {
       this.name = ''
       this.email = ''
       this.message = ''
+      this.phoneNumber = ''
     },
   }
   
