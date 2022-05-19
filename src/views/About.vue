@@ -3,14 +3,13 @@
     <v-container class="mb-10">
       <v-row class="mt-4 justify-center align-center">
         <v-col lg="6" md="6" sm="12">
-          <h1 class="title_produk">Latest Product</h1>
+          <h1 class="title_produk">Our Commodity</h1>
           <p class="desc_produk">
-            {{tabs}}
-            Iron ores are rocks and minerals from which metallic iron can be
-            economically extracted. The ores are usually rich in iron oxides and
-            vary in color from dark grey, bright yellow, or deep purple to rusty
-            red. The iron is usually found in the form of magnetite, hematite,
-            goethite, limonite or siderite.
+            {{ tabs }}
+            We trades in various commodity including, but not limited to, raw
+            materials, energy, consumable. Our trade consists of the iron &
+            steel industry, foundry industry, and other industies of the same
+            nature.
           </p>
           <!-- <v-btn to="/" x-small color="orange"> Learn More </v-btn> -->
         </v-col>
@@ -18,13 +17,14 @@
           <v-img
             class="img_produk"
             src="@/assets/logo kobaja v.2 trans.png"
-           
           ></v-img>
         </v-col>
       </v-row>
+
+      <hr />
       <!-- Tabs -->
-      <v-tabs v-model="tabs" background-color="transparent " dark>
-        <v-tab background-color="transparent " dark> All </v-tab>
+      <v-tabs v-model="tabs" background-color="transparent " dark class="my-3">
+        <!-- <v-tab background-color="transparent " dark> All </v-tab> -->
         <v-tab> {{ $t("product.categoryRaw") }} </v-tab>
         <v-tab> {{ $t("product.categoryEnergy") }} </v-tab>
         <v-tab> {{ $t("product.categoryConsumable") }} </v-tab>
@@ -32,17 +32,31 @@
 
       <v-tabs-items v-model="tabs">
         <v-tab-item>
+          <v-col lg="12" md="12" sm="12">
+            <h2>Raw Material</h2>
+            <p>
+              Our raw material commodities are including, but not limited to,
+              quality iron ores, sponge iron, hot briquetted iron, pig-iron,
+              scrap, alloy ores
+            </p>
+          </v-col>
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
-                
-                <v-col v-for="(product, index) of products" :key="index" sm="4" md="4" lg="3">
-                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
-                 
+                <v-col
+                  v-for="(product, index) of products"
+                  :key="index"
+                  sm="4"
+                  md="4"
+                  lg="3"
+                >
+                  <imgFull
+                    v-if="showImage"
+                    @close="toggleImage"
+                    :data="product"
+                  >
                   </imgFull>
                 </v-col>
-              
-                 
               </v-row>
             </v-container>
           </v-card>
@@ -52,44 +66,62 @@
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
-                
-                <v-col v-for="(product, index) of filteredList" :key="index" sm="4" md="4" lg="3">
-                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
-                 
+                <v-col
+                  v-for="(product, index) of filteredList"
+                  :key="index"
+                  sm="4"
+                  md="4"
+                  lg="3"
+                >
+                  <imgFull
+                    v-if="showImage"
+                    @close="toggleImage"
+                    :data="product"
+                  >
                   </imgFull>
                 </v-col>
-              
-                 
               </v-row>
             </v-container>
-          </v-card>
-        </v-tab-item><v-tab-item>
+          </v-card> </v-tab-item
+        ><v-tab-item>
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
-                
-                <v-col v-for="(product, index) of filteredList" :key="index" sm="4" md="4" lg="3">
-                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
-                 
+                <v-col
+                  v-for="(product, index) of filteredList"
+                  :key="index"
+                  sm="4"
+                  md="4"
+                  lg="3"
+                >
+                  <imgFull
+                    v-if="showImage"
+                    @close="toggleImage"
+                    :data="product"
+                  >
                   </imgFull>
                 </v-col>
-              
-                 
               </v-row>
             </v-container>
-          </v-card>
-        </v-tab-item><v-tab-item>
+          </v-card> </v-tab-item
+        ><v-tab-item>
           <v-card flat color="basil">
             <v-container class="container-tab">
               <v-row class="tab">
-                
-                <v-col v-for="(product, index) of filteredList" :key="index" sm="4" md="4" lg="3">
-                  <imgFull v-if="showImage" @close="toggleImage"  :data="product">
-                 
+                <v-col
+                  v-for="(product, index) of filteredList"
+                  :key="index"
+                  sm="4"
+                  md="4"
+                  lg="3"
+                >
+                  <imgFull
+                    v-if="showImage"
+                    @close="toggleImage"
+                    :data="product"
+                  >
                   </imgFull>
                 </v-col>
-              
-                 
               </v-row>
             </v-container>
           </v-card>
@@ -99,7 +131,7 @@
   </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from "axios";
 import imgFull from "@/components/imgFull.vue";
 export default {
   components: {
@@ -108,19 +140,20 @@ export default {
   name: "Home",
   data() {
     return {
-      currentTab : '',
+      currentTab: "",
       tabs: null,
-      products : [],
+      products: [],
       showImage: [],
     };
   },
   async created() {
-    try{
-    const resp = await axios.get("https://kobajadatabase.herokuapp.com/kobaja-product")
-    this.products = resp.data.data
-    }
-    catch(e){
-      this.errors.push(e)
+    try {
+      const resp = await axios.get(
+        "https://kobajadatabase.herokuapp.com/kobaja-product"
+      );
+      this.products = resp.data.data;
+    } catch (e) {
+      this.errors.push(e);
     }
   },
   methods: {
@@ -131,19 +164,16 @@ export default {
       this.showImage[id] = true;
     },
   },
-  computed :{
-    filteredList: function(){
-      return this.products.filter((product) =>{
-        if(this.tabs == 1){
+  computed: {
+    filteredList: function () {
+      return this.products.filter((product) => {
+        if (this.tabs == 1) {
           return product.category.includes("Raw Materials");
-        }else if(this.tabs ==2)
-          return product.category.includes("Energy")
-          else if (this.tabs ==3)
-          return product.category.includes("Consumable")
-      }
-      )
-    }
-  }
+        } else if (this.tabs == 2) return product.category.includes("Energy");
+        else if (this.tabs == 3) return product.category.includes("Consumable");
+      });
+    },
+  },
 };
 </script>
 <style scoped>
@@ -189,8 +219,8 @@ export default {
   font-size: 1.5rem;
 }
 @media (min-width: 1200px) {
-    .container{
-        max-width: 1350px;
-    }
+  .container {
+    max-width: 1350px;
+  }
 }
 </style>
