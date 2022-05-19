@@ -68,7 +68,7 @@
                 Here are the products that we offer
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
-                <v-btn to="/about" small plain text color="white">
+                <v-btn to="/product" small plain text color="white">
                   Learn More
                 </v-btn>
               </v-card-actions>
@@ -97,7 +97,7 @@
                 Here are more information about PT. Kobaja Nusantara Prima
               </v-card-subtitle>
               <v-card-actions class="d-flex mx-5">
-                <v-btn to="/aboutus" small plain text color="white">
+                <v-btn to="/about-us" small plain text color="white">
                   Learn More
                 </v-btn>
               </v-card-actions>

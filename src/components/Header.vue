@@ -13,13 +13,13 @@
         <v-btn to="/" x-small color="white" text>  {{ $t("header.home") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/about" x-small color="white" text>  {{ $t("header.product") }} </v-btn>
+        <v-btn to="/product" x-small color="white" text>  {{ $t("header.product") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
         <v-btn to="/contactus" x-small color="white" text>  {{ $t("header.contactUs") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/aboutus" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
+        <v-btn to="/about-us" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
       </v-card-actions>
     </v-toolbar-items>
     <v-spacer></v-spacer>

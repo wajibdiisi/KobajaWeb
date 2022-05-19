@@ -19,7 +19,7 @@ let router = new Router({
       component: Home
     },
     {
-      path: '/about',
+      path: '/product',
       name: 'about',
       component: About
     },
@@ -29,7 +29,7 @@ let router = new Router({
       component: Care
     },
     {
-      path: '/aboutus',
+      path: '/about-us',
       name: 'adoption',
       component: Adoption
     },
