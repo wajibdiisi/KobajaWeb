@@ -19,7 +19,7 @@
         <v-btn to="/contactus" x-small color="white" text>  {{ $t("header.contactUs") }} </v-btn>
       </v-card-actions>
       <v-card-actions>
-        <v-btn to="/adoption" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
+        <v-btn to="/aboutus" x-small color="white" text>  {{ $t("header.aboutUs") }} </v-btn>
       </v-card-actions>
     </v-toolbar-items>
     <v-spacer></v-spacer>
@@ -60,7 +60,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><v-btn to="/adoption" x-small color="white" text>
+              ><v-btn to="/aboutus" x-small color="white" text>
                 {{ $t("header.aboutUs") }}
               </v-btn></v-list-item-title
             >

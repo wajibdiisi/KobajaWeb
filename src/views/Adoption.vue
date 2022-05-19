@@ -174,7 +174,7 @@
               <div class="mt-2">
                 <h2 class="sub_divisi_about">Our Organizational Structure</h2>
                 <v-row class="mt-4">
-                  <v-col cols="3" class="d-flex justify-center">
+                  <v-col cols="12" md="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/People2.png"
@@ -193,7 +193,7 @@
                     </v-card>
                   </v-col>
 
-                  <v-col cols="3" class="d-flex justify-center">
+                   <v-col cols="12" md="3"  class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/People1.png"
@@ -212,7 +212,7 @@
                     </v-card>
                   </v-col>
 
-                  <v-col cols="3" class="d-flex justify-center">
+                   <v-col cols="12" md="3" class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/People3.png"
@@ -230,7 +230,7 @@
                       </v-card-text>
                     </v-card>
                   </v-col>
-                  <v-col cols="3" class="d-flex justify-center">
+                   <v-col cols="12" md="3"  class="d-flex justify-center">
                     <v-card height="auto" width="auto">
                       <v-img
                         src="@/assets/People4.png"

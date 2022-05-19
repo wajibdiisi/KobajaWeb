@@ -62,6 +62,11 @@
 export default {
   name: "Modal",
   props :['data'],
+  data(){
+    return {
+      dialog : false
+    }
+  },
   methods: {
     closeConfirm() {
       this.$emit("close");

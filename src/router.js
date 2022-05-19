@@ -13,8 +13,7 @@ Vue.use(Router)
 
 let router = new Router({
   mode: 'history',
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
       component: Home
@@ -30,7 +29,7 @@ let router = new Router({
       component: Care
     },
     {
-      path: '/adoption',
+      path: '/aboutus',
       name: 'adoption',
       component: Adoption
     },
