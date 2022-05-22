@@ -11,7 +11,7 @@
   
 
         <v-list-item-content>
-          <v-list-item-title>PT. Kobaja Nusantara Prima</v-list-item-title>
+          <v-list-item-title class="mt-3">PT. Kobaja Nusantara Prima</v-list-item-title>
           <v-list-item-subtitle>Jl. Antartika II, Kav.B4/2 – B4/3 Kec.Grogol</v-list-item-subtitle>
             <v-list-item-subtitle>
           Cilegon, Banten
