@@ -114,7 +114,7 @@
           v-model="message"
         ></v-textarea>
 
-   <vue-recaptcha sitekey="6Ldli5kfAAAAAFNV5IsUyYXtJMZbrvV79Kgb7Jja"></vue-recaptcha>
+   <vue-recaptcha sitekey="6LfsZRYgAAAAAA_-j1A5zddLUVP3VTMt8CNXrbph"></vue-recaptcha>
 
   
 
