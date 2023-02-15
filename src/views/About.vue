@@ -159,7 +159,7 @@ export default {
   async created() {
     try {
       const resp = await axios.get(
-        "https://kobajadatabase.herokuapp.com/kobaja-product"
+        "https://kobaja.onrender.com/kobaja-product"
       );
       this.products = resp.data.data;
     } catch (e) {
